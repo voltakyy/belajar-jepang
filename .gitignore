@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+dist-ssr/
+
+# TS cache
+*.tsbuildinfo
+
+# Local Environment
+.env
+.env.local
+.env.*.local
+
+# Editor directories
+.vscode/
+.idea/
+
+# Large / Copyrighted binary assets (NHK companion policy)
+*.pdf

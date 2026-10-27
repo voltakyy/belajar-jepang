@@ -1,0 +1,684 @@
+[
+  {
+    "lesson": 1,
+    "pdf_page": 6,
+    "printed_page": 5,
+    "h2": [
+      "Saya adalah Anna"
+    ],
+    "grammar_points": [
+      "A WA B DESU",
+      "Karakter bahasa Jepang"
+    ],
+    "grammar_count": 2,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/1.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/01-id-le_01.mp3"
+  },
+  {
+    "lesson": 2,
+    "pdf_page": 7,
+    "printed_page": 6,
+    "h2": [
+      "Apakah ini?"
+    ],
+    "grammar_points": [
+      "A NO B"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/2.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/02-id-le_01.mp3"
+  },
+  {
+    "lesson": 3,
+    "pdf_page": 8,
+    "printed_page": 7,
+    "h2": [
+      "Di mana toiletnya?"
+    ],
+    "grammar_points": [
+      "&nbsp;  WA DOKO DESU KA"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/3.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/03-id-le_01.mp3"
+  },
+  {
+    "lesson": 4,
+    "pdf_page": 9,
+    "printed_page": 8,
+    "h2": [
+      "Saya sudah tiba di rumah"
+    ],
+    "grammar_points": [
+      "&nbsp;  DEWA ARIMASEN"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/4.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/04-id-le_01.mp3"
+  },
+  {
+    "lesson": 5,
+    "pdf_page": 10,
+    "printed_page": 9,
+    "h2": [
+      "Itu adalah harta saya"
+    ],
+    "grammar_points": [
+      "subjek  WA  objek  O  kata kerja"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/5.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/05-id-le_01.mp3"
+  },
+  {
+    "lesson": 6,
+    "pdf_page": 11,
+    "printed_page": 10,
+    "h2": [
+      "Apa nomor teleponnya?"
+    ],
+    "grammar_points": [
+      "Nomor (1)",
+      "&nbsp; O SHIMASU"
+    ],
+    "grammar_count": 2,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/6.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/06-id-le_01.mp3"
+  },
+  {
+    "lesson": 7,
+    "pdf_page": 12,
+    "printed_page": 11,
+    "h2": [
+      "Apakah ada kue krim?"
+    ],
+    "grammar_points": [
+      "TSU: pembilang untuk benda-benda"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/7.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/07-id-le_01.mp3"
+  },
+  {
+    "lesson": 8,
+    "pdf_page": 13,
+    "printed_page": 12,
+    "h2": [
+      "Mohon sekali lagi"
+    ],
+    "grammar_points": [
+      "Kata kerja bentuk TE"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/8.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/08-id-le_01.mp3"
+  },
+  {
+    "lesson": 9,
+    "pdf_page": 14,
+    "printed_page": 13,
+    "h2": [
+      "Mulai jam berapa?"
+    ],
+    "grammar_points": [
+      "NANJI"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/9.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/09-id-le_01.mp3"
+  },
+  {
+    "lesson": 10,
+    "pdf_page": 15,
+    "printed_page": 14,
+    "h2": [
+      "Apakah semua orang ada?"
+    ],
+    "grammar_points": [
+      "MASHITA: Bentuk lampau dari MASU"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/10.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/10-id-le_01.mp3"
+  },
+  {
+    "lesson": 11,
+    "pdf_page": 16,
+    "printed_page": 15,
+    "h2": [
+      "Mohon usahakan datang"
+    ],
+    "grammar_points": [
+      "Hari-hari dalam sepekan",
+      "IKIMASU dan KIMASU"
+    ],
+    "grammar_count": 2,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/11.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/11-id-le_02.mp3"
+  },
+  {
+    "lesson": 12,
+    "pdf_page": 17,
+    "printed_page": 16,
+    "h2": [
+      "Kapan Anda datang ke Jepang?"
+    ],
+    "grammar_points": [
+      "Bulan"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/12.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/12-id-le_01.mp3"
+  },
+  {
+    "lesson": 13,
+    "pdf_page": 18,
+    "printed_page": 17,
+    "h2": [
+      "Saya suka novel"
+    ],
+    "grammar_points": [
+      "A WA B GA SUKI DESU",
+      "&nbsp; MASEN KA"
+    ],
+    "grammar_count": 2,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/13.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/13-id-le_01.mp3"
+  },
+  {
+    "lesson": 14,
+    "pdf_page": 19,
+    "printed_page": 18,
+    "h2": [
+      "Bolehkah saya membuang sampah di sini?"
+    ],
+    "grammar_points": [
+      "KARA"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/14.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/14-id-le_01.mp3"
+  },
+  {
+    "lesson": 15,
+    "pdf_page": 20,
+    "printed_page": 19,
+    "h2": [
+      "Sedang tidur"
+    ],
+    "grammar_points": [
+      "&nbsp; MASHÔ",
+      "Kata kerja bentuk TE + IMASU"
+    ],
+    "grammar_count": 2,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/15.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/15-id-le_01.mp3"
+  },
+  {
+    "lesson": 16,
+    "pdf_page": 21,
+    "printed_page": 20,
+    "h2": [
+      "Silahkan naik tangga, lalu pergi ke kanan"
+    ],
+    "grammar_points": [
+      "Kata kerja bentuk TE dapat menghubungkan kalimat"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/16.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/16-id-le_01.mp3"
+  },
+  {
+    "lesson": 17,
+    "pdf_page": 22,
+    "printed_page": 21,
+    "h2": [
+      "Rekomendasinya apa?"
+    ],
+    "grammar_points": [
+      "&nbsp; WA CHOTTO"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/17.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/17-id-le_01.mp3"
+  },
+  {
+    "lesson": 18,
+    "pdf_page": 23,
+    "printed_page": 22,
+    "h2": [
+      "Saya tersesat di jalan"
+    ],
+    "grammar_points": [
+      "Kata kerja bentuk TE + SHIMAIMASHITA"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/18.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/18-id-le_01.mp3"
+  },
+  {
+    "lesson": 19,
+    "pdf_page": 24,
+    "printed_page": 23,
+    "h2": [
+      "baguslah"
+    ],
+    "grammar_points": [
+      "Bentuk lampau dari kata sifat"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/19.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/19-id-le_01.mp3"
+  },
+  {
+    "lesson": 20,
+    "pdf_page": 25,
+    "printed_page": 24,
+    "h2": [
+      "Apakah Anda pernah menyanyikan lagu Jepang?"
+    ],
+    "grammar_points": [
+      "ARIMASU: kata kerja yang berarti kepemilikan"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/20.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/20-id-le_01.mp3"
+  },
+  {
+    "lesson": 21,
+    "pdf_page": 26,
+    "printed_page": 25,
+    "h2": [
+      "Tidak, tidak juga"
+    ],
+    "grammar_points": [
+      "IIE, SOREHODODEMO"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/21.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/21-id-le_01.mp3"
+  },
+  {
+    "lesson": 22,
+    "pdf_page": 27,
+    "printed_page": 26,
+    "h2": [
+      "Saya terlambat"
+    ],
+    "grammar_points": [
+      "FUN / PUN: pembilang menit",
+      "Kata kerja bentuk TE + WA IKEMASEN"
+    ],
+    "grammar_count": 2,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/22.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/22-id-le_01.mp3"
+  },
+  {
+    "lesson": 23,
+    "pdf_page": 28,
+    "printed_page": 27,
+    "h2": [
+      "Saya dimarahi oleh ibu"
+    ],
+    "grammar_points": [
+      "&nbsp; MASEN DESHITA"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/23.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/23-id-le_01.mp3"
+  },
+  {
+    "lesson": 24,
+    "pdf_page": 29,
+    "printed_page": 28,
+    "h2": [
+      "Mohon tidak menggunakannya"
+    ],
+    "grammar_points": [
+      "Kata yang menunjukkan waktu"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/24.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/24-id-le_01.mp3"
+  },
+  {
+    "lesson": 25,
+    "pdf_page": 30,
+    "printed_page": 29,
+    "h2": [
+      "Masuklah ke bawah meja"
+    ],
+    "grammar_points": [
+      "YÔ DA / YÔ DESU",
+      "Perbedaan antara partikel WA dan GA"
+    ],
+    "grammar_count": 2,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/25.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/25-id-le_01.mp3"
+  },
+  {
+    "lesson": 26,
+    "pdf_page": 31,
+    "printed_page": 30,
+    "h2": [
+      "Mari lebih bersemangat"
+    ],
+    "grammar_points": [
+      "&nbsp; N DESU",
+      "DESHITA"
+    ],
+    "grammar_count": 2,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/26.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/26-id-le_01.mp3"
+  },
+  {
+    "lesson": 27,
+    "pdf_page": 32,
+    "printed_page": 31,
+    "h2": [
+      "Siapa yang akan melakukan pernikahan?"
+    ],
+    "grammar_points": [
+      "Kata kerja bentuk NAI + ?"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/27.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/27-id-le_01.mp3"
+  },
+  {
+    "lesson": 28,
+    "pdf_page": 33,
+    "printed_page": 32,
+    "h2": [
+      "Selamat datang ke Shizuoka"
+    ],
+    "grammar_points": [
+      "&nbsp; E YÔKOSO",
+      "&nbsp; NI KUWASHII"
+    ],
+    "grammar_count": 2,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/28.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/28-id-le_01.mp3"
+  },
+  {
+    "lesson": 29,
+    "pdf_page": 34,
+    "printed_page": 33,
+    "h2": [
+      "Kalau dilihat dari dekat, besar ya?"
+    ],
+    "grammar_points": [
+      "&nbsp; TO"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/29.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/29-id-le_01.mp3"
+  },
+  {
+    "lesson": 30,
+    "pdf_page": 35,
+    "printed_page": 34,
+    "h2": [
+      "Mau mengambil foto sedikit lagi"
+    ],
+    "grammar_points": [
+      "&nbsp; TAI DESU"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/30.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/30-id-le_01.mp3"
+  },
+  {
+    "lesson": 31,
+    "pdf_page": 36,
+    "printed_page": 35,
+    "h2": [
+      "Sudah 82 tahun lho"
+    ],
+    "grammar_points": [
+      "Angka (2)"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/31.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/31-id-le_01.mp3"
+  },
+  {
+    "lesson": 32,
+    "pdf_page": 37,
+    "printed_page": 36,
+    "h2": [
+      "Lebih suka futon"
+    ],
+    "grammar_points": [
+      "A TO B TO DOCHIRA GA kata sifat DESU KA"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/32.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/32-id-le_01.mp3"
+  },
+  {
+    "lesson": 33,
+    "pdf_page": 38,
+    "printed_page": 37,
+    "h2": [
+      "Memberikan kepada Anna"
+    ],
+    "grammar_points": [
+      "AGEMASU dan KUREMASU"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/33.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/33-id-le_01.mp3"
+  },
+  {
+    "lesson": 34,
+    "pdf_page": 39,
+    "printed_page": 38,
+    "h2": [
+      "Empuk dan lezat"
+    ],
+    "grammar_points": [
+      "&nbsp; TTE NAN DESU KA",
+      "Kata sifat bentuk TE + kata sifat"
+    ],
+    "grammar_count": 2,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/34.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/34-id-le_01.mp3"
+  },
+  {
+    "lesson": 35,
+    "pdf_page": 40,
+    "printed_page": 39,
+    "h2": [
+      "Apakah bisa memakai kartu kredit?"
+    ],
+    "grammar_points": [
+      "Angka (3)"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/35.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/35-id-le_01.mp3"
+  },
+  {
+    "lesson": 36,
+    "pdf_page": 41,
+    "printed_page": 40,
+    "h2": [
+      "Harus belajar"
+    ],
+    "grammar_points": [
+      "Musim"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/36.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/36-id-le_01.mp3"
+  },
+  {
+    "lesson": 37,
+    "pdf_page": 42,
+    "printed_page": 41,
+    "h2": [
+      "Melihat gunung Fuji, makan sushi"
+    ],
+    "grammar_points": [
+      "&nbsp; WA DÔ DATTA?"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/37.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/37-id-le_01.mp3"
+  },
+  {
+    "lesson": 38,
+    "pdf_page": 43,
+    "printed_page": 42,
+    "h2": [
+      "Baiklah"
+    ],
+    "grammar_points": [
+      "Ungkapan kehormatan"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/38.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/38-id-le_01.mp3"
+  },
+  {
+    "lesson": 39,
+    "pdf_page": 44,
+    "printed_page": 43,
+    "h2": [
+      "Saya kira pilek"
+    ],
+    "grammar_points": [
+      "Gejala"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/39.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/39-id-le_01.mp3"
+  },
+  {
+    "lesson": 40,
+    "pdf_page": 45,
+    "printed_page": 44,
+    "h2": [
+      "Kepala berdenyut-denyut"
+    ],
+    "grammar_points": [
+      "Onomatope + SHIMASU"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/40.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/40-id-le_01.mp3"
+  },
+  {
+    "lesson": 41,
+    "pdf_page": 46,
+    "printed_page": 45,
+    "h2": [
+      "Bisa pergi ke festival kampus, menyenangkan"
+    ],
+    "grammar_points": [
+      "Kata kerja bentuk kamus + KOTO GA DEKIMASU"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/41.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/41-id-le_01.mp3"
+  },
+  {
+    "lesson": 42,
+    "pdf_page": 47,
+    "printed_page": 46,
+    "h2": [
+      "Yang mana yang paling enak ya"
+    ],
+    "grammar_points": [
+      "DORE GA ICHIBAN &nbsp; DESU KA"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/42.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/42-id-le_01.mp3"
+  },
+  {
+    "lesson": 43,
+    "pdf_page": 48,
+    "printed_page": 47,
+    "h2": [
+      "Mengapa kira-kira ya?"
+    ],
+    "grammar_points": [
+      "DÔSHITE DESHÔ KA"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/43.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/43-id-le_01.mp3"
+  },
+  {
+    "lesson": 44,
+    "pdf_page": 49,
+    "printed_page": 48,
+    "h2": [
+      "Setelah makan kue Jepang, minum teh hijau"
+    ],
+    "grammar_points": [
+      "&nbsp; KAMOSHIREMASEN"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/44.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/44-id-le_01.mp3"
+  },
+  {
+    "lesson": 45,
+    "pdf_page": 50,
+    "printed_page": 49,
+    "h2": [
+      "Selamat ulang tahun!"
+    ],
+    "grammar_points": [
+      "MORAIMASU"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/45.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/45-id-le_01.mp3"
+  },
+  {
+    "lesson": 46,
+    "pdf_page": 51,
+    "printed_page": 50,
+    "h2": [
+      "Sebelum pulang ke negara asal, dapat melihat salju, rasanya bahagia"
+    ],
+    "grammar_points": [
+      "&nbsp; NO YÔ NI"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/46.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/46-id-le_01.mp3"
+  },
+  {
+    "lesson": 47,
+    "pdf_page": 52,
+    "printed_page": 51,
+    "h2": [
+      "Menjadi guru bahasa Jepang adalah impian"
+    ],
+    "grammar_points": [
+      "&nbsp; NI NARIMASU"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/47.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/47-id-le_01.mp3"
+  },
+  {
+    "lesson": 48,
+    "pdf_page": 53,
+    "printed_page": 52,
+    "h2": [
+      "Terima kasih banyak untuk segalanya"
+    ],
+    "grammar_points": [
+      "KIOTSUKETE"
+    ],
+    "grammar_count": 1,
+    "lesson_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/48.html",
+    "audio_url": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/48-id-le_01.mp3"
+  }
+]
