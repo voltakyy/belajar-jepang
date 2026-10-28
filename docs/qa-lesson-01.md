@@ -91,13 +91,15 @@ MP3 penuh (600,08 detik), bukan perkiraan kasar.
 | Pemeriksaan | Perintah | Hasil |
 |---|---|---|
 | Type check | `npm run lint` | lulus, 0 error |
-| Unit test | `npm test` | 23/23 lulus (3 berkas) |
-| Validator konten | `npm run validate-content` | 5/5 pemeriksaan lulus |
-| Build produksi | `npm run build` | lulus, JS 331,88 kB (gzip 96,86 kB), CSS 18,54 kB (gzip 4,48 kB) |
+| Unit test | `npm test` | 70/70 lulus (3 berkas, mencakup L01–L05) |
+| Validator konten | `npm run validate-content` | 65/65 pemeriksaan lulus |
+| Build produksi | `npm run build` | lulus, JS 391,16 kB (gzip 106,85 kB), CSS 20,26 kB (gzip 4,83 kB) |
 
 Yang diperiksa validator: 48/48 pelajaran di `COURSE_MAP`, audio L11 memakai
-`11-id-le_02.mp3`, status QA L01, rentang waktu dialog, dan tautan audio ke
-server NHK.
+`11-id-le_02.mp3`, status QA semua pelajaran tertulis, jumlah kosakata/latihan/
+kartu, target grammar, tautan audio ke server NHK, dan tidak adanya pemutar
+audio tersemat. Rincian L02–L05 ada di
+[`qa-lessons-02-05.md`](qa-lessons-02-05.md).
 
 ---
 

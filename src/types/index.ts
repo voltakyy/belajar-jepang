@@ -94,6 +94,7 @@ export type Lesson = {
   id: string;                  // e.g. "L01"
   order: number;               // 1..48
   title: LanguageString;
+  situationSummary: string;    // Ringkasan situasi dialog dalam bahasa Indonesia
   pdfPage: number;             // Nomor halaman PDF sumber (PDF p. 6)
   printedPage: number;         // Nomor halaman cetak sumber (Cetak p. 5)
   situationCategories: string[]; // Multi-label dari TOC resmi

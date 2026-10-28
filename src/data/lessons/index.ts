@@ -1,10 +1,18 @@
 export { COURSE_MAP } from './courseMap';
 import { Lesson, ProductArc } from '../../types';
 import { lesson01 } from './lesson01';
+import { lesson02 } from './lesson02';
+import { lesson03 } from './lesson03';
+import { lesson04 } from './lesson04';
+import { lesson05 } from './lesson05';
 
 export const ALL_LESSONS: Lesson[] = [
   lesson01,
-  // Lessons 2 to 48 will be populated in Gate 3 & 4
+  lesson02,
+  lesson03,
+  lesson04,
+  lesson05,
+  // Lessons 6 to 48 will follow in the next content batch
 ];
 
 export const PRODUCT_ARCS: ProductArc[] = [

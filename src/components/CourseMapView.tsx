@@ -1,7 +1,9 @@
 import React from 'react';
-import { COURSE_MAP, PRODUCT_ARCS } from '../data/lessons';
+import { COURSE_MAP, PRODUCT_ARCS, ALL_LESSONS } from '../data/lessons';
 import { UserProgress } from '../types';
 import { Check, Play, Headphones, BookOpen, ExternalLink } from 'lucide-react';
+
+const AUTHORED_LESSON_IDS = new Set(ALL_LESSONS.map((lesson) => lesson.id));
 
 interface CourseMapViewProps {
   progress: UserProgress;
@@ -27,9 +29,11 @@ export const CourseMapView: React.FC<CourseMapViewProps> = ({
       </header>
 
       <div className="note" style={{ marginBottom: '2rem' }}>
-        Audio tidak diputar di dalam aplikasi ini. Tekan{' '}
-        <strong>Audio NHK</strong> pada kartu pelajaran, tab baru akan terbuka
-        di situs resmi NHK.
+        <strong>{ALL_LESSONS.length} dari 48 pelajaran</strong> sudah bisa
+        dipelajari sekarang. Kartu lain tetap menautkan audio dan naskah resmi
+        NHK, tetapi latihan terpandunya belum ditulis. Audio tidak diputar di
+        dalam aplikasi ini &mdash; tekan <strong>Audio NHK</strong>, tab baru
+        akan terbuka di situs resmi NHK.
       </div>
 
       {PRODUCT_ARCS.map((arc) => {
@@ -46,7 +50,7 @@ export const CourseMapView: React.FC<CourseMapViewProps> = ({
             <div className="lesson-grid">
               {arcLessons.map((lesson) => {
                 const completed = isDone(lesson.id);
-                const isActive = lesson.id === 'L01';
+                const isActive = AUTHORED_LESSON_IDS.has(lesson.id);
 
                 return (
                   <article

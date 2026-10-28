@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Play, Check, AlertTriangle } from 'lucide-react';
 import { UserProgress, ReviewCard, ErrorLog } from '../types';
-import { lesson01 } from '../data/lessons/lesson01';
+import { ALL_LESSONS } from '../data/lessons';
 
 interface HomeViewProps {
   progress: UserProgress;
@@ -20,9 +20,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
   onStartReview,
   onOpenMap,
 }) => {
-  const isL1Done = progress.completedLessons.includes('L01');
   const unresolvedErrors = errors.filter((e) => !e.resolved);
   const completed = progress.completedLessons.length;
+  const nextLesson =
+    ALL_LESSONS.find(
+      (lesson) => !progress.completedLessons.includes(lesson.id)
+    ) ?? ALL_LESSONS[ALL_LESSONS.length - 1];
+  const isNextDone = progress.completedLessons.includes(nextLesson.id);
 
   return (
     <div className="container">
@@ -63,16 +67,18 @@ export const HomeView: React.FC<HomeViewProps> = ({
         {/* Pelajaran berikutnya */}
         <section className="sheet lesson-sheet" aria-labelledby="next-lesson">
           <span className="lesson-no">
-            {isL1Done ? 'Ulangi pelajaran' : 'Pelajaran berikutnya'} &middot; 01
+            {isNextDone ? 'Ulangi pelajaran' : 'Pelajaran berikutnya'} &middot;{' '}
+            {String(nextLesson.order).padStart(2, '0')}
           </span>
 
-          <h2 className="lesson-title-jp jp" id="next-lesson">
-            <ruby>
-              私<rt>わたし</rt>
-            </ruby>
-            はアンナです
-          </h2>
-          <div className="lesson-title-romaji">Watashi wa Anna desu</div>
+          <h2
+            className="lesson-title-jp jp"
+            id="next-lesson"
+            dangerouslySetInnerHTML={{
+              __html: nextLesson.title.rubyHtml ?? nextLesson.title.jp,
+            }}
+          />
+          <div className="lesson-title-romaji">{nextLesson.title.romaji}</div>
           <div
             style={{
               fontSize: '0.68rem',
@@ -82,13 +88,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
               margin: '0.35rem 0 0.9rem',
             }}
           >
-            15 menit &middot; 6 kata &middot; 5 latihan
+            15 menit &middot; {nextLesson.vocabulary.length} kata &middot;{' '}
+            {nextLesson.exercises.length} latihan
           </div>
 
           <p className="lesson-desc">
-            Anna baru tiba di Jepang dan berkenalan dengan Sakura di lobi
-            kampus. Pola hari ini: <strong>A wa B desu</strong> &mdash; penanda
-            topik は dan kopula sopan です.
+            {nextLesson.situationSummary} Pola hari ini:{' '}
+            <strong>{nextLesson.grammarPoints[0].pattern}</strong>.
           </p>
 
           <div
@@ -101,15 +107,15 @@ export const HomeView: React.FC<HomeViewProps> = ({
           >
             <button
               className="btn-primary"
-              onClick={() => onStartLesson('L01')}
+              onClick={() => onStartLesson(nextLesson.id)}
             >
               <Play size={16} fill="currentColor" />
-              {isL1Done ? 'Ulangi sesi' : 'Mulai sesi'}
+              {isNextDone ? 'Ulangi sesi' : 'Mulai sesi'}
             </button>
             <button className="btn-secondary" onClick={onOpenMap}>
               Lihat 48 pelajaran
             </button>
-            {isL1Done && (
+            {isNextDone && (
               <span
                 style={{
                   display: 'inline-flex',
@@ -134,7 +140,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <p style={{ marginBottom: '0.85rem' }}>
               {dueCards.length > 0
                 ? 'Kartu yang sudah waktunya diulang.'
-                : 'Belum ada kartu jatuh tempo. Selesaikan Pelajaran 1 untuk memulai.'}
+                : 'Belum ada kartu jatuh tempo. Selesaikan satu pelajaran untuk memulai.'}
             </p>
             <button
               className="btn-secondary"
@@ -223,7 +229,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           </ul>
         ) : (
           <ul className="can-do-list">
-            {lesson01.canDo.map((cd, i) => (
+            {nextLesson.canDo.map((cd, i) => (
               <li key={i}>
                 <span
                   aria-hidden="true"
@@ -250,7 +256,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
             color: 'var(--ink-faint)',
           }}
         >
-          Delapan kartu ulasan otomatis masuk ke antrean setelah sesi selesai.
+          Delapan sampai dua belas kartu ulasan per pelajaran otomatis masuk
+          ke antrean setelah sesi selesai.
         </div>
       </section>
     </div>

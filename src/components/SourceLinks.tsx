@@ -114,8 +114,8 @@ export const SourceLinks: React.FC<SourceLinksProps> = ({
             NHK.
           </li>
           <li>
-            Tekan tombol <strong>play</strong> di pemutar peramban, lalu geser
-            ke menit yang tertera.
+            Tekan tombol <strong>play</strong> di pemutar peramban
+            {startAt ? ', lalu geser ke menit yang tertera' : ''}.
           </li>
           <li>
             Kembali ke tab ini dan jawab pertanyaan mendengarkan. Tidak perlu

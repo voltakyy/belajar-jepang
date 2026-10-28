@@ -14,6 +14,8 @@ export const lesson01: Lesson = {
     ],
     rubyHtml: '<ruby>私<rt>わたし</rt></ruby>はアンナです',
   },
+  situationSummary:
+    'Anna, mahasiswi pertukaran asal Thailand, baru tiba di Jepang. Di lobi kampus ia bertemu Sakura, mahasiswi Jepang yang akan menjadi tutornya.',
   pdfPage: 6,
   printedPage: 5,
   situationCategories: ['Di universitas', 'Acara Khusus'],

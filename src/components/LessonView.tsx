@@ -146,6 +146,7 @@ export const LessonView: React.FC<LessonViewProps> = ({
 
   const gistDone = Object.keys(gistAnswers).length >= lesson.listening.gistQuestions.length;
   const checkedCount = Object.values(checklist).filter(Boolean).length;
+  const requiredChecks = Math.min(3, lesson.outputTask.selfCheckList.length);
 
   return (
     <div className="container">
@@ -199,9 +200,7 @@ export const LessonView: React.FC<LessonViewProps> = ({
           </h2>
 
           <p style={{ color: 'var(--ink-soft)', fontSize: '0.95rem', maxWidth: '64ch' }}>
-            Anna, mahasiswi pertukaran asal Thailand, baru tiba di Jepang. Di
-            lobi kampus ia bertemu Sakura, mahasiswi Jepang yang akan menjadi
-            tutornya. Perhatikan bagaimana keduanya menyebut nama.
+            {lesson.situationSummary}
           </p>
 
           <div className="note-paper" style={{ margin: '1.15rem 0' }}>
@@ -217,7 +216,7 @@ export const LessonView: React.FC<LessonViewProps> = ({
 
           <div className="row-between" style={{ marginBottom: '0.35rem' }}>
             <h3 style={{ fontSize: '0.72rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--ink-faint)' }}>
-              Enam kata kunci
+              {lesson.vocabulary.length} kata kunci
             </h3>
             {voiceState === 'ready' && (
               <span style={{ fontSize: '0.66rem', color: 'var(--ink-faint)' }}>
@@ -285,9 +284,9 @@ export const LessonView: React.FC<LessonViewProps> = ({
               Dengarkan dialog aslinya
             </h2>
             <p style={{ color: 'var(--ink-soft)', fontSize: '0.92rem', marginBottom: '1.15rem', maxWidth: '62ch' }}>
-              Audio pelajaran ini panjangnya sekitar sepuluh menit. Dialog Anna
-              dan Sakura ada di bagian awal, jadi kamu tidak perlu
-              mendengarkan semuanya.
+              Audio pelajaran ini panjangnya sekitar sepuluh menit. Dialog
+              intinya ada di bagian awal, jadi kamu tidak perlu mendengarkan
+              semuanya.
             </p>
 
             <SourceLinks
@@ -482,7 +481,10 @@ export const LessonView: React.FC<LessonViewProps> = ({
               Cek rincian dialog
             </h3>
             <p style={{ fontSize: '0.82rem', color: 'var(--ink-faint)', marginBottom: '1rem' }}>
-              Jawab dari ingatan. Kalau ragu, putar ulang bagian 01:22–01:34.
+              Jawab dari ingatan.{' '}
+              {lesson.officialUrls.audioTimestamp
+                ? `Kalau ragu, putar ulang bagian ${lesson.officialUrls.audioTimestamp.start}–${lesson.officialUrls.audioTimestamp.end}.`
+                : 'Kalau ragu, putar ulang bagian awal audio.'}
             </p>
 
             {lesson.listening.detailQuestions.map((dq, dIdx) => {
@@ -825,8 +827,8 @@ export const LessonView: React.FC<LessonViewProps> = ({
               &ldquo;{lesson.outputTask.modelAnswer.id}&rdquo;
             </div>
             <div style={{ fontSize: '0.75rem', color: 'var(--ink-faint)', marginTop: '0.6rem' }}>
-              Contoh ini memakai nama Anna dari dialog. Ucapkan ulang dengan
-              namamu sendiri.
+              Contoh ini memakai nama dari dialog. Ucapkan ulang dengan namamu
+              sendiri.
             </div>
           </div>
 
@@ -879,15 +881,16 @@ export const LessonView: React.FC<LessonViewProps> = ({
             <button
               className="btn-primary"
               onClick={handleCompleteLesson}
-              disabled={checkedCount < 3}
-              style={{ opacity: checkedCount < 3 ? 0.45 : 1 }}
+              disabled={checkedCount < requiredChecks}
+              style={{ opacity: checkedCount < requiredChecks ? 0.45 : 1 }}
             >
               Tutup sesi <ArrowRight size={15} />
             </button>
           </div>
 
           <p style={{ fontSize: '0.7rem', color: 'var(--ink-faint)', marginTop: '0.6rem', textAlign: 'right' }}>
-            Centang minimal 3 dari 4 butir.
+            Centang minimal {requiredChecks} dari{' '}
+            {lesson.outputTask.selfCheckList.length} butir.
           </p>
         </section>
       )}
