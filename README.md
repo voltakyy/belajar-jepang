@@ -8,6 +8,9 @@ Aplikasi ini **tidak** menyalin atau menghosting materi NHK. Audio dan naskah
 resmi dibuka di situs NHK lewat tautan; yang ada di repositori ini hanya
 kerangka belajar, penjelasan berbahasa Indonesia, dan latihan orisinal.
 
+**Coba langsung:** <https://voltakyy.github.io/belajar-jepang/> — dibangun
+otomatis oleh GitHub Actions setiap ada push ke `main`.
+
 ## Status
 
 Lima pelajaran dari 48 sudah dibangun dan diperiksa mesin (L01–L05). Sisanya
