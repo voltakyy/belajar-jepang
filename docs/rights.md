@@ -37,12 +37,27 @@ Untuk menjamin ketiadaan pelanggaran hak cipta dalam repositori kode:
 * Pembelajar diarahkan membaca dialog percakapan selengkapnya melalui tautan resmi: **"Buka naskah resmi di situs NHK WORLD"**.
 * Terjemahan bahasa Indonesia e-book tidak disalin mentah; seluruh contoh kalimat baru dan penjelasan tata bahasa menggunakan redaksi orisinal.
 
+### 2.3 Suara Perangkat (Text-to-Speech) dan Halaman Aksara NHK
+* Tombol suara pada halaman **Kana** dan daftar kosakata memakai API
+  `speechSynthesis` bawaan perangkat. Tidak ada berkas audio yang diunduh,
+  disimpan, atau dikirim ke server mana pun.
+* Suara ini **bukan** rekaman NHK dan **bukan** model pelafalan. Aplikasi
+  menonaktifkan tombol bila perangkat tidak memiliki voice `ja-JP`, dan tidak
+  pernah memakai suara ini untuk dialog atau kalimat panjang.
+* Halaman aksara NHK (`.../lesson/id/letters/hiragana.html` dan
+  `.../letters/katakana.html`) hanya ditautkan. Animasi urutan goresan tidak
+  disalin, tidak di-embed, dan tidak di-cache.
+
 ---
 
 ## 3. Ketetapan Lisensi Perangkat Lunak & Konten
 
 * **Kode Sumber Perangkat Lunak (Software Source Code):** Dilisensikan di bawah **MIT License**.
-* **Konten Pembelajaran Orisinal (Original Content):** Dilisensikan di bawah **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**.
+* **Konten Pembelajaran Orisinal (Original Content):** **Belum ditetapkan.**
+  Pemilik proyek masih memilih antara CC BY-SA 4.0 dan All Rights Reserved.
+  Sampai keputusan diambil, berlaku default hak cipta: seluruh hak dipertahankan
+  dan tidak ada lisensi yang diberikan. Dokumen ini tidak boleh dibaca sebagai
+  pemberian lisensi.
 * **Klausul Pengecualian Mutlak (Carve-Out Clause):**
   > Seluruh kutipan pendek, nama tokoh (Anna, Sakura, Rodrigo, dll.), dan materi yang bersumber dari kursus *Belajar Bahasa Jepang* NHK WORLD tetap merupakan hak cipta milik **© NHK**. Poin-poin tersebut **TIDAK ikut dilisensikan ulang** di bawah lisensi MIT atau CC BY-SA aplikasi ini.
 

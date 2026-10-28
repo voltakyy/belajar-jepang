@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { X, Download, Upload, Trash2, CheckCircle, ExternalLink } from 'lucide-react';
+import { X, Download, Upload, Trash2, CheckCircle, ExternalLink, Volume2, VolumeX } from 'lucide-react';
 import { UserSettings, exportUserData, importUserData, resetUserData } from '../utils/srs';
+import { useJapaneseVoice } from '../hooks/useJapaneseVoice';
 
 interface SettingsModalProps {
   isOpen: boolean;
@@ -18,6 +19,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   onDataChanged,
 }) => {
   const [importStatus, setImportStatus] = useState<string | null>(null);
+  const { state: voiceState } = useJapaneseVoice();
 
   if (!isOpen) return null;
 
@@ -79,21 +81,45 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               type="checkbox"
               checked={settings.showFurigana}
               onChange={(e) => onUpdateSettings({ ...settings, showFurigana: e.target.checked })}
-              style={{ width: '20px', height: '20px', accentColor: 'var(--accent-vermilion)' }}
+              style={{ width: '20px', height: '20px', accentColor: 'var(--amber-deep)' }}
             />
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <div>
-              <div style={{ fontWeight: 600 }}>Tampilkan Rōmaji</div>
+              <div style={{ fontWeight: 600 }}>Tampilkan RÅmaji</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Tulisan alfabet latin sebagai bantuan</div>
             </div>
             <input
               type="checkbox"
               checked={settings.showRomaji}
               onChange={(e) => onUpdateSettings({ ...settings, showRomaji: e.target.checked })}
-              style={{ width: '20px', height: '20px', accentColor: 'var(--accent-vermilion)' }}
+              style={{ width: '20px', height: '20px', accentColor: 'var(--amber-deep)' }}
             />
+          </div>
+        </div>
+
+        {/* Status suara perangkat */}
+        <div style={{ borderTop: '1px solid var(--border-light)', paddingTop: '1.1rem', marginBottom: '1.25rem' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
+            {voiceState === 'ready' ? (
+              <Volume2 size={16} color="var(--moss)" style={{ marginTop: '3px' }} />
+            ) : (
+              <VolumeX size={16} color="var(--vermilion)" style={{ marginTop: '3px' }} />
+            )}
+            <div>
+              <div style={{ fontWeight: 600, fontSize: '0.92rem' }}>
+                Suara Jepang di perangkat
+              </div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.55 }}>
+                {voiceState === 'ready' &&
+                  'Tersedia. Dipakai untuk membunyikan kana dan kata satuan â€” bukan contoh pelafalan.'}
+                {voiceState === 'no-japanese' &&
+                  'Belum terpasang. Tombol suara di halaman Kana akan nonaktif. Tambahkan paket suara Jepang di setelan sistem, atau gunakan audio NHK.'}
+                {voiceState === 'unsupported' &&
+                  'Peramban ini tidak mendukung pembacaan suara. Audio NHK tetap berfungsi.'}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -135,7 +161,9 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         <div style={{ background: 'var(--bg-subtle)', padding: '0.85rem', borderRadius: 'var(--radius-sm)', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
           <strong>Penyangkalan Resmi (Disclaimer):</strong>
           <br />
-          Nihongo adalah materi pendamping belajar mandiri independen berbasis silabus kursus *Belajar Bahasa Jepang (2015)*. Aplikasi ini tidak berafiliasi atau disponsori oleh NHK WORLD Radio Japan.
+          Nihongo adalah materi pendamping belajar mandiri berbasis silabus
+          kursus <em>Belajar Bahasa Jepang</em> (2015). Aplikasi ini
+          tidak berafiliasi atau disponsori oleh NHK WORLD Radio Japan.
           <br />
           <a
             href="https://www3.nhk.or.jp/nhkworld/lesson/indonesian/download/"

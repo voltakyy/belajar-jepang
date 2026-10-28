@@ -9,11 +9,13 @@ Dokumen ini mendefinisikan arsitektur aplikasi, skema data TypeScript, pemisahan
 ### 1.1 Stack Teknologi
 * **Arsitektur:** Static Single Page Application (SPA), zero-backend, dapat di-deploy langsung ke GitHub Pages atau static hosting.
 * **Framework & Bahasa:** **Vite + React + TypeScript**.
-* **Styling:** Vanilla CSS murni dengan variabel warna (*Design Tokens*). Estetika *calm paper-like* kontras tinggi (WCAG AA).
+* **Styling:** Vanilla CSS murni dengan variabel warna (*Design Tokens*). Estetika "buku catatan": kanvas navy, lembar kertas krem, aksen amber, judul serif. Kontras token sudah dinaikkan, tetapi belum diuji dengan axe atau Lighthouse — lihat `docs/qa-lesson-01.md` §5.
 * **Tipografi & Aksara Jepang:**
   * Menghindari unduhan bundel font berat yang menguras kuota mobile data pembelajar.
-  * Menggunakan *system font stack*:
-    `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif`.
+  * Menggunakan *system font stack* tanpa permintaan jaringan:
+    * Latin display: `"Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif`
+    * Jepang: `"Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif`
+    * Antarmuka: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`
   * Format furigana menggunakan standar elemen semantik HTML5 modern:
     `<ruby>日本語<rt>にほんご</rt></ruby>` (tanpa tag `<rb>` yang sudah usang).
 * **Penyimpanan State:** `localStorage` lokal pada peramban pembelajar.
@@ -31,6 +33,22 @@ Dokumen ini mendefinisikan arsitektur aplikasi, skema data TypeScript, pemisahan
 * **Penyelesaian Durasi MP3 Siaran (10 menit vs 3–4 menit sesi):**
   1. Aplikasi menyertakan **Petunjuk Timestamp Percakapan** (pada Pelajaran 1: dialog Anna–Sakura berada di menit **01:22 – 01:34**, buffer perkiraan **01:20 – 01:35**).
   2. Menyediakan tombol pintas langsung menuju **Pemutar Kalimat Resmi NHK** untuk mendengarkan kalimat dialog per kalimat secara terisolasi.
+
+### 1.4 Halaman Kana, Bantuan Suara, dan Penemuan Tautan Resmi
+* **Halaman Kana:** 46 kana dasar + 25 kana bersuara, tersedia dalam hiragana
+  dan katakana lewat dua tab. Satu tombol per kana. Satu kana = satu mora,
+  sehingga pemutaran per aksara dapat dipertanggungjawabkan. Bila perangkat
+  tidak punya voice `ja-JP`, ketukan tidak berbunyi dan halaman menjelaskan
+  sebabnya, bukan diam saja.
+* **Batas bantuan suara:** `speechSynthesis` perangkat hanya dipakai untuk
+  kana tunggal dan kata tunggal pada daftar kosakata. Tidak untuk dialog atau
+  kalimat. Tombol dinonaktifkan bila voice `ja-JP` tidak tersedia, dan status
+  voice ditampilkan di modal setelan.
+* **Penemuan tautan resmi:** tautan NHK tidak boleh berupa teks kecil abu-abu.
+  Setiap pelajaran memakai komponen `SourceLinks` berisi label "Sumber resmi",
+  penjelasan satu baris tentang NHK WORLD, dua tombol besar (audio dan naskah),
+  tombol salin menit dialog, serta panduan tiga langkah pada tahap Dengar.
+  Peta pelajaran juga menampilkan "Audio NHK" dan "Naskah" sebagai aksi kartu.
 
 ---
 

@@ -1,79 +1,134 @@
-# QA Verification Report: Lesson 01 (Gate 2)
+# Laporan Verifikasi: Pelajaran 01 (Gate 2)
 
 - **Lesson ID:** L01
-- **Judul Pelajaran:** Watashi wa Anna desu (Saya Anna)
-- **Topik / Situasi:** Perkenalan & Menyapa
-- **Arc Kurikulum:** Arc 1: Bertemu & Berkenalan (L01–L08)
-- **Tanggal Audit:** 2026-10-28
-- **Auditor:** Automated Test Suite + Pair Programming Assistant
-- **QA Status:** `machine_checked`
-- **Reviewed By:** `TBD` (menunggu validasi penutur asli / pengajar)
+- **Judul:** Watashi wa Anna desu (Saya Anna)
+- **Situasi TOC:** Di universitas, Acara Khusus
+- **Arc:** Arc 1: Identitas & Fondasi Interaksi Awal (L01–L06)
+- **Tanggal pemeriksaan:** 2026-10-28
+- **Metode:** pemeriksaan mesin (test suite, validator konten, build) + pemeriksaan manual halaman sumber
+- **Status QA:** `machine_checked`
+- **Reviewed by:** `TBD` — belum ada peninjauan oleh penutur asli atau pengajar
+- **Yang belum diverifikasi:** pelafalan model, kesesuaian budaya, dan aksesibilitas formal
 
 ---
 
-## 1. Verifikasi Pemetaan Sumber (Source Map)
+## 1. Pemetaan Sumber
 
-| Parameter | Ekspektasi | Hasil Verifikasi | Status |
-|---|---|---|---|
-| Halaman PDF | PDF p. 6 | `pdfPage: 6` | PASS |
-| Halaman Cetak | Cetak p. 5 | `printedPage: 5` (Rumus: PDF - 1) | PASS |
-| Audio URL | `01-id-le_01.mp3` | `https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/01-id-le_01.mp3` | PASS |
-| Audio Timestamp | Dialog Anna–Sakura | Buffer: `01:20–01:35 (perkiraan)` / Dialog: `01:22–01:34` | PASS |
-| Ikon Situasi TOC | Perkenalan & Menyapa | Sesuai Indeks PDF p. 3 | PASS |
+| Parameter | Nilai | Bukti |
+|---|---|---|
+| Halaman PDF | 6 | `pdfPage: 6` |
+| Halaman cetak | 5 | `printedPage: 5` (aturan cetak = PDF − 1) |
+| Judul sumber | 私はアンナです | h2 Pelajaran 1, halaman cetak 5 |
+| Audio | `.../learn/mp3/01-id-le_01.mp3` | URL terverifikasi; segmen dialog 01:22–01:34 |
+| Ikon situasi | Di universitas, Acara Khusus | Indeks TOC, PDF p. 3–4 |
+| Titik grammar | `A wa B desu`, pengenalan aksara | Halaman pelajaran, kolom tata bahasa |
 
----
-
-## 2. Kepatuhan Hak Cipta & Link-Only (Gate 1 & Gate 2)
-
-- [x] **Zero Asset Storage:** Tidak ada file MP3 atau PDF yang disimpan di server / repositori lokal.
-- [x] **Link-Out Audio:** Audio dibuka melalui tab baru ke URL resmi NHK WORLD dengan tombol khusus bertanda `(Buka di tab baru)`.
-- [x] **Kutipan Sahabat Belajar (Fair Use):** Hanya 1 kutipan dialog pendek berlisensi fair use dengan atribusi lengkap ke *NHK WORLD Radio Japan - Belajar Bahasa Jepang 2015*. Tidak ada transkrip utuh dialog yang disalin.
-- [x] **Bebas Komik/Ilustrasi:** Karakter digambarkan secara tipografis tanpa menggunakan ilustrasi karakter resmi NHK.
+Catatan: `audioTimestamp` disimpan sebagai `01:22`–`01:34` dengan buffer
+`01:20`–`01:35`. Angka ini berasal dari penyelarasan klip `sc01`–`sc04` dengan
+MP3 penuh (600,08 detik), bukan perkiraan kasar.
 
 ---
 
-## 3. Rubrik Pedagogis 15-Menit (6 Langkah)
+## 2. Kepatuhan Hak Cipta
 
-1. **Langkah 1: Orient (1–2 Menit)**
-   - Can-do statement: *"Memperkenalkan diri sendiri dengan sopan kepada orang lain."*
-   - Situasi dan target grammar dijelaskan ringkas.
-   - 6 kosakata kunci disajikan dengan furigana (`<ruby>`), romaji, dan arti Indonesia.
-
-2. **Langkah 2: Listen (3–4 Menit)**
-   - Panduan audio timestamp: `01:22–01:34`.
-   - 2 Pertanyaan Inti (Gist): Menangkap nama karakter dan lokasi dialog.
-   - 2 Pertanyaan Rinci (Detail): Menangkap kata sapaan pembuka dan partikel topik.
-
-3. **Langkah 3: Notice (3–4 Menit)**
-   - 3 catatan tata bahasa: Partikel `wa` (topik), `desu` (kopula sopan), `ka` (tanya).
-   - Penjelasan fokus budaya: Menghindari kata "anata" untuk menyebut nama orang lain.
-   - 1 kutipan dialog singkat untuk studi penekanan intonasi.
-
-4. **Langkah 4: Retrieve (3–4 Menit)**
-   - 5 latihan interaktif dengan umpan balik instan:
-     - 2 Multiple Choice
-     - 1 Fill in the Blank
-     - 1 Sentence Reordering
-     - 1 Meaning Matching
-   - Tombol "Tanya Kenapa Salah?" mencatat kesalahan ke Buku Catatan Khusus.
-
-5. **Langkah 5: Use (2–3 Menit)**
-   - Tugas produksi nyata: Masukkan nama sendiri ke dalam struktur kalimat *"Watashi wa [Nama] desu"*.
-   - Simulasi balasan dari Sakura-san secara dinamis.
-
-6. **Langkah 6: Review (1–2 Menit)**
-   - 8 kartu SRS (Spaced Repetition System) otomatis diinjeksikan ke dek belajar pengguna:
-     - 4 kartu kosakata (`watashi`, `anata`, `hai`, `iie`)
-     - 2 kartu partikel/tata bahasa (`wa`, `desu`)
-     - 2 kartu kalimat lengkap
-   - Refleksi Can-do diri sendiri sebelum menyelesaikan pelajaran.
+- **Tidak ada PDF/MP3 yang di-commit.** Berkas
+  `ebook_bahasa_jepang_nhk.pdf` memang ada di folder kerja lokal, tetapi
+  masuk `.gitignore` dan tidak boleh di-commit. Repositori hanya berisi kode,
+  dokumen, dan metadata.
+- **Metadata, bukan naskah.** `all_lessons_nhk.json` dan
+  `scraped_lessons.json` menyimpan nomor pelajaran, halaman, judul, dan URL.
+  Keduanya tidak memuat transkrip dialog.
+- **Audio keluar dari aplikasi.** Tidak ada pemutar tersemat dan tidak ada
+  hotlink media. Tombol audio membuka berkas resmi NHK di tab baru.
+- **Kutipan.** Hanya satu kalimat pendek dengan atribusi. Dokumen ini tidak
+  mengklaim *fair use*; mengacu pada `docs/rights.md`, kutipan akan dihapus
+  bila NHK meminta.
+- **Ilustrasi.** Tidak ada gambar karakter atau komik NHK yang dipakai.
+  Karakter hanya disebut sebagai teks.
+- **Batas yang jujur.** Yurisdiksi hak cipta berbeda-beda. Dokumen ini
+  mencatat praktik yang dipakai, bukan jaminan hukum.
 
 ---
 
-## 4. Hasil Uji Otomasi (Vitest)
+## 3. Isi Pelajaran (sesuai implementasi)
 
-- `src/tests/normalize.test.ts`: PASS (Pembersihan tanda baca, spasi, pencocokan romaji/kana)
-- `src/tests/srs.test.ts`: PASS (Algoritma interval bertingkat 1 -> 3 -> 7 -> 14 -> 30 hari, penanganan kesalahan, ekspor/impor)
-- `src/tests/content.test.ts`: PASS (48 pelajaran, pemetaan halaman, URL Lesson 11, kuota 5-8 vocab & 8-12 kartu)
-- `npm run lint`: PASS (0 error TypeScript)
-- `npm run build`: PASS (Bundle production siap deploy)
+### Langkah 1 — Orientasi
+- 6 kosakata: 私, 初めまして, よろしくお願いします, こちらこそ, アンナ, さくら.
+- Furigana memakai `<ruby>/<rt>`; rōmaji adalah toggle, bukan tampilan default.
+- Tombol suara per kata memakai TTS perangkat (lihat §5).
+
+### Langkah 2 — Dengar
+- Tautan audio dan naskah resmi ditampilkan sebagai blok "Sumber resmi"
+  dengan penjelasan dan dua tombol, bukan tautan abu-abu kecil.
+- 2 pertanyaan inti (gist): pelaku dialog dan tujuan interaksi.
+- 2 pertanyaan rinci (detail): salam pembuka dan salam penutup.
+
+### Langkah 3 — Sadari
+- 2 titik grammar aktif: `A wa B desu` dan salam perkenalan.
+- Catatan kontras: は ditulis "ha" tetapi dibaca "wa"; `anata` dihindari.
+- 1 kutipan pendek teratribusi + tautan naskah resmi.
+
+### Langkah 4 — Latih
+- 5 butir: cloze partikel, susun kalimat, pilihan makna, recall ke Jepang,
+  transformasi grammar.
+- Kesalahan otomatis masuk buku catatan.
+- Susun kalimat baru diperiksa setelah semua token terpasang.
+
+### Langkah 5 — Pakai
+- Tugas produksi dengan nama sendiri + 4 butir self-check.
+- Contoh jawaban memakai nama Anna dari dialog, dengan catatan agar
+  pembelajar menggantinya.
+
+### Langkah 6 — Tutup
+- 8 kartu masuk antrean SRS: わたし, はじめまして,
+  よろしくおねがいします, は, です, こちらこそ, kartu listening, kartu output.
+- Ambang: minimal 3 dari 4 self-check sebelum sesi ditutup.
+
+---
+
+## 4. Hasil Uji (dijalankan 2026-10-28)
+
+| Pemeriksaan | Perintah | Hasil |
+|---|---|---|
+| Type check | `npm run lint` | lulus, 0 error |
+| Unit test | `npm test` | 23/23 lulus (3 berkas) |
+| Validator konten | `npm run validate-content` | 5/5 pemeriksaan lulus |
+| Build produksi | `npm run build` | lulus, JS 331,88 kB (gzip 96,86 kB), CSS 18,54 kB (gzip 4,48 kB) |
+
+Yang diperiksa validator: 48/48 pelajaran di `COURSE_MAP`, audio L11 memakai
+`11-id-le_02.mp3`, status QA L01, rentang waktu dialog, dan tautan audio ke
+server NHK.
+
+---
+
+## 5. Batasan yang Belum Diselesaikan
+
+1. **Belum ada review manusia.** Tidak ada penutur asli atau pengajar yang
+   memeriksa furigana, padanan Indonesia, atau kesantunan.
+2. **TTS bukan model pelafalan.** Tombol suara memakai voice `ja-JP` bawaan
+   perangkat. Kualitas dan ketersediaannya berbeda antar perangkat; aplikasi
+   menonaktifkan tombol bila voice tidak ada. Audio NHK tetap satu-satunya
+   contoh bunyi.
+3. **Aksesibilitas belum diuji formal.** Belum ada axe, Lighthouse, atau uji
+   pembaca layar. Klaim "WCAG AA" karena itu tidak dipakai. Kontras token
+   sudah dinaikkan, tetapi belum diukur dengan alat.
+4. **Belum ada uji pengguna.** Alur 15 menit belum dicoba oleh pembelajar
+   sungguhan.
+5. **Lisensi konten belum dipilih.** Opsi A (CC BY-SA 4.0) atau B
+   (All Rights Reserved) masih menunggu keputusan pemilik proyek. Kode
+   berlisensi MIT.
+
+---
+
+## 6. Riwayat Koreksi
+
+Kesalahan pada versi laporan sebelumnya yang sudah dibetulkan:
+
+- URL MP3 sempat ditulis dengan path `/learn/list/` — seharusnya `/learn/mp3/`.
+- Arc 1 sempat ditulis L01–L08 — seharusnya L01–L06.
+- Klaim "Zero Asset Storage" terlalu absolut — PDF ada di folder lokal
+  (gitignored), jadi pernyataan dipertajam.
+- Klaim "fair use" bertentangan dengan `rights.md` — dihapus.
+- Daftar kartu SRS sempat menyebut `watashi, anata, hai, iie` — bukan isi
+  kartu yang sebenarnya.
+- Klaim "WCAG AA" tanpa pengujian — dihapus dan diganti batasan di §5.

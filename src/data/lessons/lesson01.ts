@@ -5,7 +5,7 @@ export const lesson01: Lesson = {
   order: 1,
   title: {
     jp: '私はアンナです',
-    kana: 'わたしはあんなです',
+    kana: 'わたしはアンナです',
     romaji: 'Watashi wa Anna desu',
     id: 'Saya adalah Anna',
     rubySegments: [
@@ -43,7 +43,7 @@ export const lesson01: Lesson = {
       examples: [
         {
           jp: '私はアンナです。',
-          kana: 'わたしはあんなです。',
+          kana: 'わたしはアンナです。',
           romaji: 'Watashi wa Anna desu.',
           id: 'Saya adalah Anna.',
           rubySegments: [{ text: '私', reading: 'わたし' }, { text: 'はアンナです。' }],
@@ -110,7 +110,7 @@ export const lesson01: Lesson = {
       idMeaning: 'Saya (Kata ganti orang pertama umum)',
       contextSentence: {
         jp: '私はアンナです。',
-        kana: 'わたしはあんなです。',
+        kana: 'わたしはアンナです。',
         romaji: 'Watashi wa Anna desu.',
         id: 'Saya adalah Anna.',
         rubyHtml: '<ruby>私<rt>わたし</rt></ruby>はアンナです。',
@@ -250,7 +250,7 @@ export const lesson01: Lesson = {
     {
       id: 'L01-EX2',
       type: 'sentence_order',
-      prompt: 'Susun kata-kata berikut menjadi kalimat perkenalan yang tepat: [ アンナ ] [ です ] [ わたし ] [ は ]',
+      prompt: 'Susun kata-kata berikut menjadi kalimat perkenalan yang tepat.',
       correctAnswer: ['わたし は アンナ です', 'わたしはアンナです'],
       explanation: 'Urutan kalimat bahasa Jepang adalah Topik (watashi wa) + Predikat nama (Anna) + Kopula (desu).',
       sourceRef: 'NHK L01 grammar point 1',
@@ -295,7 +295,7 @@ export const lesson01: Lesson = {
     ],
     modelAnswer: {
       jp: '初めまして。私はアンナです。よろしくお願いします。',
-      kana: 'はじめまして。わたしはあんなです。よろしくおねがいします。',
+      kana: 'はじめまして。わたしはアンナです。よろしくおねがいします。',
       romaji: 'Hajimemashite. Watashi wa Anna desu. Yoroshiku onegai shimasu.',
       id: 'Senang bertemu dengan Anda. Saya adalah Anna. Mohon bimbingannya / Senang berkenalan dengan Anda.',
       rubySegments: [
@@ -376,7 +376,7 @@ export const lesson01: Lesson = {
       front: '[Audio L1 menit 01:22] Dengarkan salam pembuka pada dialog resmi NHK L1. Ungkapan apa yang diucapkan Anna tepat sebelum menyebutkan namanya?',
       back: '初めまして (はじめまして / Hajimemashite) — Khusus diucapkan saat pertama kali berjumpa.',
       type: 'listening',
-      audioRef: 'https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/1.html',
+      audioRef: 'https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/01-id-le_01.mp3',
       sourceRef: 'NHK L01 audio sc01',
       qaStatus: 'machine_checked',
     },

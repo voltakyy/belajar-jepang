@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar } from './components/Navbar';
+import { Navbar, type View } from './components/Navbar';
 import { HomeView } from './components/HomeView';
 import { LessonView } from './components/LessonView';
 import { CourseMapView } from './components/CourseMapView';
 import { ReviewView } from './components/ReviewView';
+import { KanaView } from './components/KanaView';
 import { SettingsModal } from './components/SettingsModal';
 import {
   getUserProgress,
@@ -18,7 +19,7 @@ import { ALL_LESSONS, getLessonById, getAllReviewCards } from './data/lessons';
 import { ReviewCard } from './types';
 
 export const App: React.FC = () => {
-  const [currentView, setCurrentView] = useState<'home' | 'lesson' | 'map' | 'review'>('home');
+  const [currentView, setCurrentView] = useState<View>('home');
   const [activeLessonId, setActiveLessonId] = useState<string>('L01');
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
@@ -31,18 +32,21 @@ export const App: React.FC = () => {
     setProgress(getUserProgress());
     setSettings(getUserSettings());
     setErrors(getErrorNotebook());
-    const allCards = getAllReviewCards();
-    setDueCards(getDueCards(allCards));
+    setDueCards(getDueCards(getAllReviewCards()));
   };
 
   useEffect(() => {
     refreshData();
   }, []);
 
+  const navigate = (view: View) => {
+    setCurrentView(view);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const handleStartLesson = (lessonId: string) => {
     setActiveLessonId(lessonId);
-    setCurrentView('lesson');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    navigate('lesson');
   };
 
   const handleCompleteLesson = (canDos: string[], newCards: ReviewCard[]) => {
@@ -57,10 +61,7 @@ export const App: React.FC = () => {
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Navbar
         currentView={currentView}
-        onNavigate={(view) => {
-          setCurrentView(view);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }}
+        onNavigate={navigate}
         onOpenSettings={() => setIsSettingsOpen(true)}
       />
 
@@ -71,8 +72,8 @@ export const App: React.FC = () => {
             dueCards={dueCards}
             errors={errors}
             onStartLesson={handleStartLesson}
-            onStartReview={() => setCurrentView('review')}
-            onOpenMap={() => setCurrentView('map')}
+            onStartReview={() => navigate('review')}
+            onOpenMap={() => navigate('map')}
           />
         )}
 
@@ -82,8 +83,8 @@ export const App: React.FC = () => {
             showFurigana={settings.showFurigana}
             showRomaji={settings.showRomaji}
             onComplete={handleCompleteLesson}
-            onBack={() => setCurrentView('home')}
-            onGoToReview={() => setCurrentView('review')}
+            onBack={() => navigate('home')}
+            onGoToReview={() => navigate('review')}
           />
         )}
 
@@ -94,16 +95,42 @@ export const App: React.FC = () => {
           />
         )}
 
+        {currentView === 'kana' && <KanaView />}
+
         {currentView === 'review' && (
           <ReviewView
             dueCards={dueCards}
             allCards={getAllReviewCards()}
             errors={errors}
             onRefreshData={refreshData}
-            onBack={() => setCurrentView('home')}
+            onBack={() => navigate('home')}
           />
         )}
       </main>
+
+      <footer className="site-foot">
+        <div className="container site-foot-inner">
+          <p className="site-foot-lede">
+            <strong>Penyangkalan.</strong> Nihongo adalah aplikasi pendamping
+            belajar independen untuk pembelajar bahasa Jepang di Indonesia.
+            Aplikasi ini tidak berafiliasi, disponsori, atau didukung oleh NHK
+            WORLD. Hak cipta materi asli <em>Belajar Bahasa Jepang</em> (e-book
+            PDF, rekaman MP3, naskah drama, dan ilustrasi komik) sepenuhnya
+            milik NHK WORLD RADIO JAPAN.
+          </p>
+          <p className="site-foot-links">
+            <a
+              href="https://www3.nhk.or.jp/nhkworld/lesson/id/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Situs kursus NHK
+            </a>
+            <span aria-hidden="true">/</span>
+            <span>Kode berlisensi MIT</span>
+          </p>
+        </div>
+      </footer>
 
       <SettingsModal
         isOpen={isSettingsOpen}

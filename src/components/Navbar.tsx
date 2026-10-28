@@ -1,96 +1,78 @@
 import React from 'react';
-import { BookOpen, Map, RotateCcw, Settings } from 'lucide-react';
+import { Settings, ExternalLink } from 'lucide-react';
+
+export type View = 'home' | 'lesson' | 'map' | 'review' | 'kana';
 
 interface NavbarProps {
-  currentView: 'home' | 'lesson' | 'map' | 'review';
-  onNavigate: (view: 'home' | 'lesson' | 'map' | 'review') => void;
+  currentView: View;
+  onNavigate: (view: View) => void;
   onOpenSettings: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate, onOpenSettings }) => {
-  return (
-    <>
-      <header style={{
-        backgroundColor: 'var(--bg-card)',
-        borderBottom: '1px solid var(--border-light)',
-        padding: '0.85rem 1.25rem',
-        position: 'sticky',
-        top: 0,
-        zIndex: 100,
-      }}>
-        <div style={{
-          maxWidth: '760px',
-          margin: '0 auto',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}>
-          <div 
-            onClick={() => onNavigate('home')}
-            style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.6rem' }}
-          >
-            <div style={{
-              width: '32px',
-              height: '32px',
-              borderRadius: '8px',
-              backgroundColor: 'var(--accent-ink)',
-              display: 'flex',
+const LINKS: { id: View; label: string }[] = [
+  { id: 'home', label: 'Belajar' },
+  { id: 'map', label: 'Peta' },
+  { id: 'kana', label: 'Kana' },
+  { id: 'review', label: 'Ulasan' },
+];
+
+const NHK_HOME = 'https://www3.nhk.or.jp/nhkworld/lesson/indonesian/';
+
+export const Navbar: React.FC<NavbarProps> = ({
+  currentView,
+  onNavigate,
+  onOpenSettings,
+}) => (
+  <header className="site-nav">
+    <div className="site-nav-inner">
+      <button className="wordmark" onClick={() => onNavigate('home')}>
+        <span className="wordmark-name">Nihongo</span>
+        <span className="wordmark-jp">日本語</span>
+      </button>
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+        <nav className="nav-links" aria-label="Navigasi utama">
+          {LINKS.map((link) => {
+            const active =
+              link.id === currentView ||
+              (link.id === 'home' && currentView === 'lesson');
+            return (
+              <button
+                key={link.id}
+                className={`nav-link ${active ? 'active' : ''}`}
+                onClick={() => onNavigate(link.id)}
+                aria-current={active ? 'page' : undefined}
+              >
+                {link.label}
+              </button>
+            );
+          })}
+          <a
+            className="nav-link"
+            href={NHK_HOME}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: 'var(--amber)',
+              display: 'inline-flex',
               alignItems: 'center',
-              justifyContent: 'center',
-              color: '#ffffff',
-              fontWeight: 700,
-              fontSize: '1rem',
-            }}>
-              日
-            </div>
-            <div>
-              <div style={{ fontWeight: 800, fontSize: '1.1rem', letterSpacing: '-0.02em' }}>
-                Nihongo <span style={{ fontWeight: 400, color: 'var(--text-muted)', fontSize: '0.9rem' }}>日本語</span>
-              </div>
-              <div style={{ fontSize: '0.7rem', color: 'var(--text-subtle)' }}>
-                Pendamping Mandiri NHK 2015
-              </div>
-            </div>
-          </div>
+              gap: '0.25rem',
+            }}
+          >
+            NHK
+            <ExternalLink size={10} />
+          </a>
+        </nav>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            <button
-              onClick={onOpenSettings}
-              className="btn-secondary"
-              style={{ padding: '0.45rem 0.65rem', minHeight: '36px', fontSize: '0.85rem' }}
-              title="Setelan Tampilan & Data"
-            >
-              <Settings size={16} />
-              <span style={{ display: 'none' }}>Setelan</span>
-            </button>
-          </div>
-        </div>
-      </header>
-
-      {/* Bottom Nav for thumb-friendly mobile access */}
-      <nav className="bottom-nav">
         <button
-          className={`bottom-nav-btn ${currentView === 'home' || currentView === 'lesson' ? 'active' : ''}`}
-          onClick={() => onNavigate('home')}
+          onClick={onOpenSettings}
+          className="nav-icon"
+          aria-label="Setelan tampilan dan data"
+          title="Setelan"
         >
-          <BookOpen size={20} />
-          <span>Belajar</span>
+          <Settings size={17} />
         </button>
-        <button
-          className={`bottom-nav-btn ${currentView === 'map' ? 'active' : ''}`}
-          onClick={() => onNavigate('map')}
-        >
-          <Map size={20} />
-          <span>Peta</span>
-        </button>
-        <button
-          className={`bottom-nav-btn ${currentView === 'review' ? 'active' : ''}`}
-          onClick={() => onNavigate('review')}
-        >
-          <RotateCcw size={20} />
-          <span>Ulasan</span>
-        </button>
-      </nav>
-    </>
-  );
-};
+      </div>
+    </div>
+  </header>
+);

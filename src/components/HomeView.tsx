@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, RotateCcw, Award, AlertTriangle, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Play, Check, AlertTriangle } from 'lucide-react';
 import { UserProgress, ReviewCard, ErrorLog } from '../types';
 import { lesson01 } from '../data/lessons/lesson01';
 
@@ -22,131 +22,237 @@ export const HomeView: React.FC<HomeViewProps> = ({
 }) => {
   const isL1Done = progress.completedLessons.includes('L01');
   const unresolvedErrors = errors.filter((e) => !e.resolved);
+  const completed = progress.completedLessons.length;
 
   return (
     <div className="container">
-      {/* Welcome Banner */}
-      <div style={{ marginBottom: '1.75rem' }}>
-        <h1 style={{ fontSize: '1.65rem', marginBottom: '0.35rem' }}>
-          Selamat Datang di Nihongo
+      <header className="masthead">
+        <div className="kicker">Pendamping mandiri &middot; NHK 2015</div>
+        <h1>
+          Nihongo<span className="jp">日本語</span>
         </h1>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>
-          Satu sesi 15 menit per hari. Fokus pada performa komunikatif nyata, bukan sekadar menghafal kartu.
-        </p>
-      </div>
-
-      {/* 1. Primary Action Card */}
-      <div className="paper-card" style={{ borderLeft: '4px solid var(--accent-ink)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.75rem' }}>
-          <span className="badge badge-vermilion">Rekomendasi Hari Ini</span>
-          <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Estimasi: 15 menit</span>
-        </div>
-
-        <h2 style={{ fontSize: '1.35rem', marginBottom: '0.5rem' }}>
-          Pelajaran 1: 私はアンナです
-        </h2>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1rem' }}>
-          Memperkenalkan nama diri, partikel topik は (wa), kopula です (desu), dan salam perjumpaan pertama kali.
+        <p>
+          Empat puluh delapan pelajaran dari siaran NHK WORLD edisi Anna.
+          Satu sesi lima belas menit: dengarkan dialog aslinya, sadari satu
+          pola, lalu pakai sendiri.
         </p>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          <button
-            className="btn-primary"
-            onClick={() => onStartLesson('L01')}
-            style={{ width: '100%', maxWidth: '280px' }}
-          >
-            <Play size={18} fill="#ffffff" />
-            {isL1Done ? 'Ulangi Pelajaran 1' : 'Mulai Pelajaran 1 (15m)'}
-          </button>
-          {isL1Done && (
-            <span style={{ color: 'var(--accent-green)', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.3rem', fontWeight: 600 }}>
-              <CheckCircle2 size={18} /> Selesai
+        <div className="stat-row">
+          <div className="stat">
+            <span className="stat-num">
+              {completed}
+              <span style={{ color: 'var(--on-navy-faint)', fontSize: '0.6em' }}>
+                {' '}
+                / 48
+              </span>
             </span>
-          )}
+            <span className="stat-label">Pelajaran tuntas</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num">{progress.streakDays}</span>
+            <span className="stat-label">Hari beruntun</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num">{dueCards.length}</span>
+            <span className="stat-label">Kartu jatuh tempo</span>
+          </div>
         </div>
-      </div>
+      </header>
 
-      {/* 2. SRS Review Card */}
-      <div className="paper-card" style={{ borderLeft: '4px solid #3b82f6' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.3rem' }}>
-              <RotateCcw size={16} color="#3b82f6" />
-              <h3 style={{ fontSize: '1.05rem' }}>Antrean Ulasan SRS</h3>
-            </div>
-            <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-              {dueCards.length > 0
-                ? `${dueCards.length} kartu pengulangan jatuh tempo hari ini.`
-                : 'Belum ada kartu jatuh tempo. Selesaikan Pelajaran 1 untuk mengaktifkan kartu baru.'}
-            </p>
+      <div className="feature">
+        {/* Pelajaran berikutnya */}
+        <section className="sheet lesson-sheet" aria-labelledby="next-lesson">
+          <span className="lesson-no">
+            {isL1Done ? 'Ulangi pelajaran' : 'Pelajaran berikutnya'} &middot; 01
+          </span>
+
+          <h2 className="lesson-title-jp jp" id="next-lesson">
+            <ruby>
+              私<rt>わたし</rt>
+            </ruby>
+            はアンナです
+          </h2>
+          <div className="lesson-title-romaji">Watashi wa Anna desu</div>
+          <div
+            style={{
+              fontSize: '0.68rem',
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              color: 'var(--ink-faint)',
+              margin: '0.35rem 0 0.9rem',
+            }}
+          >
+            15 menit &middot; 6 kata &middot; 5 latihan
           </div>
 
-          <button
-            className="btn-secondary"
-            onClick={onStartReview}
-            disabled={dueCards.length === 0}
-            style={{ opacity: dueCards.length === 0 ? 0.6 : 1 }}
+          <p className="lesson-desc">
+            Anna baru tiba di Jepang dan berkenalan dengan Sakura di lobi
+            kampus. Pola hari ini: <strong>A wa B desu</strong> &mdash; penanda
+            topik は dan kopula sopan です.
+          </p>
+
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.9rem',
+              flexWrap: 'wrap',
+            }}
           >
-            Mulai Ulasan
-          </button>
-        </div>
+            <button
+              className="btn-primary"
+              onClick={() => onStartLesson('L01')}
+            >
+              <Play size={16} fill="currentColor" />
+              {isL1Done ? 'Ulangi sesi' : 'Mulai sesi'}
+            </button>
+            <button className="btn-secondary" onClick={onOpenMap}>
+              Lihat 48 pelajaran
+            </button>
+            {isL1Done && (
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.3rem',
+                  fontSize: '0.75rem',
+                  color: 'var(--moss)',
+                  fontWeight: 600,
+                }}
+              >
+                <Check size={14} /> Sudah tuntas
+              </span>
+            )}
+          </div>
+        </section>
+
+        {/* Panel samping */}
+        <aside className="side-stack">
+          <div className="mini-sheet">
+            <h3>Ulasan hari ini</h3>
+            <div className="stat-num">{dueCards.length}</div>
+            <p style={{ marginBottom: '0.85rem' }}>
+              {dueCards.length > 0
+                ? 'Kartu yang sudah waktunya diulang.'
+                : 'Belum ada kartu jatuh tempo. Selesaikan Pelajaran 1 untuk memulai.'}
+            </p>
+            <button
+              className="btn-secondary"
+              onClick={onStartReview}
+              disabled={dueCards.length === 0}
+              style={{
+                width: '100%',
+                minHeight: '40px',
+                padding: '0.45rem 0.8rem',
+                fontSize: '0.8rem',
+                opacity: dueCards.length === 0 ? 0.45 : 1,
+              }}
+            >
+              Buka ulasan
+            </button>
+          </div>
+
+          {unresolvedErrors.length > 0 && (
+            <div className="mini-sheet">
+              <h3 style={{ color: '#e79b86' }}>
+                <AlertTriangle
+                  size={12}
+                  style={{ verticalAlign: '-1px', marginRight: '0.3rem' }}
+                />
+                Perlu diulang
+              </h3>
+              <p style={{ marginBottom: '0.5rem' }}>
+                {unresolvedErrors.length} latihan pernah salah. Lihat lagi
+                polanya sebelum lanjut.
+              </p>
+              <button
+                className="text-link"
+                onClick={onStartReview}
+                style={{ background: 'none', padding: 0 }}
+              >
+                Buka buku catatan <ArrowRight size={12} />
+              </button>
+            </div>
+          )}
+
+          <div className="mini-sheet">
+            <h3>Sumber materi</h3>
+            <p style={{ marginBottom: '0.6rem' }}>
+              Audio dan naskah asli ada di NHK WORLD, gratis dan tanpa akun.
+              Aplikasi ini hanya menautkan, tidak menyalin.
+            </p>
+            <a
+              className="text-link"
+              href="https://www3.nhk.or.jp/nhkworld/lesson/indonesian/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Kunjungi NHK <ArrowRight size={12} />
+            </a>
+          </div>
+        </aside>
       </div>
 
-      {/* 3. Can-Do Progress Card */}
-      <div className="paper-card">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.75rem' }}>
-          <Award size={18} color="var(--accent-amber)" />
-          <h3 style={{ fontSize: '1.05rem' }}>Capaian Komunikatif (Can-Do)</h3>
+      {/* Capaian */}
+      <section
+        className="sheet"
+        style={{ marginTop: '1.1rem' }}
+        aria-labelledby="cando-heading"
+      >
+        <div className="row-between" style={{ marginBottom: '0.9rem' }}>
+          <h2
+            id="cando-heading"
+            style={{ fontSize: '1.2rem', color: 'var(--ink)' }}
+          >
+            Setelah sesi ini
+          </h2>
+          <span className="badge">Can-do</span>
         </div>
 
         {progress.masteredCanDos.length > 0 ? (
-          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+          <ul className="can-do-list">
             {progress.masteredCanDos.map((cd, idx) => (
-              <li key={idx} style={{ fontSize: '0.88rem', display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-                <CheckCircle2 size={16} color="var(--accent-green)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
+              <li key={idx}>
+                <Check
+                  size={15}
+                  style={{ flexShrink: 0, marginTop: '3px', color: 'var(--moss)' }}
+                />
                 <span>{cd}</span>
               </li>
             ))}
           </ul>
         ) : (
-          <div style={{ fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-            Target Pelajaran 1:
-            <ul style={{ marginTop: '0.4rem', paddingLeft: '1.25rem' }}>
-              {lesson01.canDo.map((cd, i) => (
-                <li key={i} style={{ marginBottom: '0.2rem' }}>{cd}</li>
-              ))}
-            </ul>
-          </div>
+          <ul className="can-do-list">
+            {lesson01.canDo.map((cd, i) => (
+              <li key={i}>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    color: 'var(--amber-deep)',
+                    fontFamily: 'var(--font-serif)',
+                    lineHeight: 1.4,
+                  }}
+                >
+                  {i + 1}.
+                </span>
+                <span>{cd}</span>
+              </li>
+            ))}
+          </ul>
         )}
-      </div>
 
-      {/* 4. Weak-Spot / Error Reminder Card */}
-      {unresolvedErrors.length > 0 && (
-        <div className="paper-card" style={{ borderLeft: '4px solid var(--accent-vermilion)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.4rem' }}>
-            <AlertTriangle size={18} color="var(--accent-vermilion)" />
-            <h3 style={{ fontSize: '1rem', color: 'var(--accent-vermilion)' }}>
-              Catatan Kelemahan ({unresolvedErrors.length} pola)
-            </h3>
-          </div>
-          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
-            {unresolvedErrors[0].prompt}
-          </p>
-          <div style={{ fontSize: '0.8rem', background: 'var(--bg-subtle)', padding: '0.5rem', borderRadius: 'var(--radius-sm)' }}>
-            <strong>Kunci:</strong> {unresolvedErrors[0].correctAnswer} &bull; {unresolvedErrors[0].explanation}
-          </div>
-        </div>
-      )}
-
-      {/* Quick link to Course Map */}
-      <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
-        <button
-          onClick={onOpenMap}
-          style={{ fontSize: '0.88rem', color: 'var(--text-muted)', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
+        <div
+          style={{
+            marginTop: '1rem',
+            paddingTop: '0.75rem',
+            borderTop: '1px solid var(--border-light)',
+            fontSize: '0.78rem',
+            color: 'var(--ink-faint)',
+          }}
         >
-          Lihat Peta Lengkap 48 Pelajaran <ArrowRight size={14} />
-        </button>
-      </div>
+          Delapan kartu ulasan otomatis masuk ke antrean setelah sesi selesai.
+        </div>
+      </section>
     </div>
   );
 };

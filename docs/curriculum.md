@@ -11,8 +11,13 @@ Dokumen ini memetakan rancangan instruksional aplikasi **Nihongo**, jenjang capa
   * Aksara Kanji dilengkapi Furigana presisi menggunakan elemen standar HTML5:  
     `<ruby>私<rt>わたし</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>です` (tanpa tag `<rb>` yang sudah usang).
   * Tampilan Rōmaji disediakan sebagai tombol transisi (*toggle*), bukan tampilan default permanen.
-  * Tipografi mengandalkan *system font stack* bebas kuota data seluler:
-    `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif`.
+  * Tipografi memakai *system font stack* tanpa unduhan font eksternal:
+    * Latin display: `"Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif`
+    * Jepang: `"Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif`
+    * Antarmuka: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`
+  * Halaman **Kana** menyediakan 46 kana dasar dan 25 kana bersuara. Tautan
+    ke halaman aksara resmi NHK (daftar + animasi urutan goresan) ditempatkan
+    sebagai blok "Sumber resmi", bukan sebagai iframe.
 
 ---
 
