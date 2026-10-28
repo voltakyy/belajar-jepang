@@ -26,7 +26,7 @@ Butuh Node 20 atau lebih baru.
 
 ```bash
 npm install
-npm run dev               # server pengembangan di http://localhost:5173
+npm run dev               # server pengembangan di http://localhost:3000
 npm run build             # build produksi ke dist/
 npm run preview           # memeriksa hasil build
 npm run lint              # tsc --noEmit
