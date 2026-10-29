@@ -45,7 +45,7 @@ assert(
 
 // --- Authored lessons ---
 const indexFile = readFileSync(resolve(rootDir, 'src/data/lessons/index.ts'), 'utf8');
-const AUTHORED_COUNT = 10;
+const AUTHORED_COUNT = 15;
 
 for (let n = 1; n <= AUTHORED_COUNT; n++) {
   const lessonId = `L${String(n).padStart(2, '0')}`;
@@ -92,9 +92,10 @@ for (let n = 1; n <= AUTHORED_COUNT; n++) {
     `${label}: every item carries machine_checked status`
   );
 
+  const audioSuffix = n === 11 ? '_02' : '_01';
   assert(
     file.includes(
-      `https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/${String(n).padStart(2, '0')}-id-le_01.mp3`
+      `https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/${String(n).padStart(2, '0')}-id-le${audioSuffix}.mp3`
     ),
     `${label}: audio points at the official NHK server`
   );

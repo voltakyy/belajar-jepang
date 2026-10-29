@@ -53,11 +53,11 @@ Untuk menjamin ketiadaan pelanggaran hak cipta dalam repositori kode:
 ## 3. Ketetapan Lisensi Perangkat Lunak & Konten
 
 * **Kode Sumber Perangkat Lunak (Software Source Code):** Dilisensikan di bawah **MIT License**.
-* **Konten Pembelajaran Orisinal (Original Content):** **Belum ditetapkan.**
-  Pemilik proyek masih memilih antara CC BY-SA 4.0 dan All Rights Reserved.
-  Sampai keputusan diambil, berlaku default hak cipta: seluruh hak dipertahankan
-  dan tidak ada lisensi yang diberikan. Dokumen ini tidak boleh dibaca sebagai
-  pemberian lisensi.
+* **Konten Pembelajaran Orisinal (Original Content):** Dilisensikan di bawah
+  **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**.
+  Lisensi ini mencakup penjelasan bahasa Indonesia, latihan, kartu ulasan, dan
+  tugas produksi yang ditulis untuk proyek ini. Ringkasan lisensi:
+  <https://creativecommons.org/licenses/by-sa/4.0/>.
 * **Klausul Pengecualian Mutlak (Carve-Out Clause):**
   > Seluruh kutipan pendek, nama tokoh (Anna, Sakura, Rodrigo, dll.), dan materi yang bersumber dari kursus *Belajar Bahasa Jepang* NHK WORLD tetap merupakan hak cipta milik **© NHK**. Poin-poin tersebut **TIDAK ikut dilisensikan ulang** di bawah lisensi MIT atau CC BY-SA aplikasi ini.
 
