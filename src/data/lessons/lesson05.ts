@@ -185,7 +185,7 @@ export const lesson05: Lesson = {
         romaji: 'Kore wa zenbu manga desu ka.',
         id: 'Apakah ini semua manga?',
         rubyHtml:
-          'これは<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>漫画<rt>まんが</rt></ruby>ですか。',
+          'これは<ruby>全部<rt>ぜんぶ</rt></ruby>マンガですか。',
       },
       sourceRef: 'NHK L05 Dialog',
       qaStatus: 'machine_checked',
@@ -253,7 +253,7 @@ export const lesson05: Lesson = {
         romaji: 'Kore wa zenbu manga desu ka.',
         id: 'Apakah ini semua manga?',
         rubyHtml:
-          'これは<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>漫画<rt>まんが</rt></ruby>ですか。',
+          'これは<ruby>全部<rt>ぜんぶ</rt></ruby>マンガですか。',
       },
       sourceRef: 'NHK L05 Dialog',
       qaStatus: 'machine_checked',

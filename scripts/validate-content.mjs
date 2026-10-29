@@ -45,7 +45,7 @@ assert(
 
 // --- Authored lessons ---
 const indexFile = readFileSync(resolve(rootDir, 'src/data/lessons/index.ts'), 'utf8');
-const AUTHORED_COUNT = 15;
+const AUTHORED_COUNT = 20;
 
 for (let n = 1; n <= AUTHORED_COUNT; n++) {
   const lessonId = `L${String(n).padStart(2, '0')}`;

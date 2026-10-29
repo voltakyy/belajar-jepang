@@ -226,7 +226,7 @@ export const lesson10: Lesson = {
         romaji: 'Hajimeni shinchō to taijū o hakarimasu.',
         id: 'Pertama-tama, kami akan mengukur tinggi dan berat badan.',
         rubyHtml:
-          'はじめに<ruby>身長<rt>しんちょう</rt></ruby>と<ruby>体重<rt>たいじゅう</rt></ruby>を<ruby>測<rt>はか</rt></ruby>ります。',
+          'はじめに<ruby>身長<rt>しんちょう</rt></ruby>と<ruby>体重<rt>たいじゅう</rt></ruby>をはかります。',
       },
       sourceRef: 'NHK L10 Dialog',
       qaStatus: 'machine_checked',
