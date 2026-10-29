@@ -13,13 +13,14 @@ otomatis oleh GitHub Actions setiap ada push ke `main`.
 
 ## Status
 
-Lima pelajaran dari 48 sudah dibangun dan diperiksa mesin (L01–L05). Sisanya
+Sepuluh pelajaran dari 48 sudah dibangun dan diperiksa mesin (L01–L10). Sisanya
 masih berupa peta kurikulum dengan tautan ke sumber resmi.
 
-- L01–L05 lolos type check, 70 unit test, validator konten, dan build
-  produksi. Laporan: [`docs/qa-lesson-01.md`](docs/qa-lesson-01.md) dan
-  [`docs/qa-lessons-02-05.md`](docs/qa-lessons-02-05.md).
-- L02–L05 belum memakai penanda menit audio karena offset dialognya belum
+- L01–L10 lolos type check, 120 unit test, validator konten, dan build
+  produksi. Laporan: [`docs/qa-lesson-01.md`](docs/qa-lesson-01.md),
+  [`docs/qa-lessons-02-05.md`](docs/qa-lessons-02-05.md), dan
+  [`docs/qa-lessons-06-10.md`](docs/qa-lessons-06-10.md).
+- L02–L10 belum memakai penanda menit audio karena offset dialognya belum
   diukur; UI tidak menampilkan tautan waktu palsu.
 - Belum ada peninjauan oleh penutur asli atau pengajar. Status QA masih
   `machine_checked`.
@@ -65,7 +66,7 @@ Contoh bunyi yang benar tetap audio NHK.
 ```
 src/
   components/       tampilan: beranda, pelajaran, peta, kana, ulasan, setelan
-  data/lessons/     isi pelajaran (L01–L05 tertulis, 48 di peta)
+  data/lessons/     isi pelajaran (L01–L10 tertulis, 48 di peta)
   data/kana.ts      tabel hiragana dan katakana
   utils/            SRS, normalisasi jawaban, speech
   tests/            unit test
@@ -75,6 +76,7 @@ docs/
   source-map.md     verifikasi URL dan halaman sumber
   qa-lesson-01.md   laporan pemeriksaan L01
   qa-lessons-02-05.md laporan pemeriksaan L02–L05
+  qa-lessons-06-10.md laporan pemeriksaan L06–L10
   rights.md         kebijakan hak cipta dan lisensi
 scripts/            validator konten dan skrip riset sumber
 ```

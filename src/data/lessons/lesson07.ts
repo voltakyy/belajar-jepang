@@ -1,0 +1,497 @@
+import { Lesson } from '../../types';
+
+export const lesson07: Lesson = {
+  id: 'L07',
+  order: 7,
+  title: {
+    jp: 'シュークリームはありますか',
+    kana: 'シュークリームはありますか',
+    romaji: 'Shūkurīmu wa arimasu ka',
+    id: 'Apakah ada kue sus?',
+    rubySegments: [{ text: 'シュークリームはありますか' }],
+    rubyHtml: 'シュークリームはありますか',
+  },
+  situationSummary:
+    'Anna dan Sakura datang ke toko kue. Sakura ingin membeli dua kue sus, dan pegawai toko menunjukkan letaknya.',
+  pdfPage: 12,
+  printedPage: 11,
+  situationCategories: ['Perbelanjaan & Restoran', 'Bepergian & Berjalan-jalan'],
+  productArcId: 'arc-2',
+  officialUrls: {
+    lessonPage:
+      'https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/7.html',
+    audioMp3:
+      'https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/07-id-le_01.mp3',
+  },
+  canDo: [
+    'Saya bisa menanyakan ketersediaan barang dengan pola [benda] wa arimasu ka.',
+    'Saya bisa meminta sejumlah barang dengan pola [benda] o [jumlah] kudasai.',
+  ],
+  grammarPoints: [
+    {
+      id: 'L07-GP1',
+      title: 'A WA ARIMASU KA (Apakah ada A?)',
+      pattern: '[benda] wa arimasu ka',
+      explanationId:
+        'あります menyatakan keberadaan benda. Untuk bertanya apakah suatu benda tersedia, sebutkan bendanya, tambahkan は, lalu ありますか. Jawaban singkatnya はい、あります atau いいえ、ありません.',
+      contrastNote:
+        'Bahasa Indonesia bisa bertanya hanya dengan "Ada kue sus?" Bahasa Jepang menambahkan か dan memakai は untuk menandai benda yang dicari.',
+      examples: [
+        {
+          jp: 'シュークリームはありますか。',
+          kana: 'シュークリームはありますか。',
+          romaji: 'Shūkurīmu wa arimasu ka.',
+          id: 'Apakah ada kue sus?',
+          rubySegments: [{ text: 'シュークリームはありますか。' }],
+          rubyHtml: 'シュークリームはありますか。',
+        },
+        {
+          jp: 'ケーキはありますか。',
+          kana: 'ケーキはありますか。',
+          romaji: 'Kēki wa arimasu ka.',
+          id: 'Apakah ada kue?',
+          rubySegments: [{ text: 'ケーキはありますか。' }],
+          rubyHtml: 'ケーキはありますか。',
+        },
+        {
+          jp: 'はい、あります。',
+          kana: 'はい、あります。',
+          romaji: 'Hai, arimasu.',
+          id: 'Ya, ada.',
+          rubySegments: [{ text: 'はい、あります。' }],
+          rubyHtml: 'はい、あります。',
+        },
+      ],
+      role: 'active_target',
+      sourceRef: 'NHK L07 Tata Bahasa p. 11',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-GP2',
+      title: 'A O [JUMLAH] KUDASAI (Minta A sebanyak ...)',
+      pattern: '[benda] o [jumlah] kudasai',
+      explanationId:
+        'ください dipakai untuk meminta sesuatu. Jumlahnya memakai pembilang つ: ひとつ (1), ふたつ (2), みっつ (3). Contoh dari dialog: シュークリームをふたつください.',
+      contrastNote:
+        'Bahasa Indonesia memakai "minta dua kue" atau "dua kue, ya". Bahasa Jepang menempatkan jumlah sebelum ください dan menandai bendanya dengan を.',
+      examples: [
+        {
+          jp: 'シュークリームを二つください。',
+          kana: 'シュークリームをふたつください。',
+          romaji: 'Shūkurīmu o futatsu kudasai.',
+          id: 'Minta dua kue sus.',
+          rubySegments: [
+            { text: 'シュークリームを' },
+            { text: '二', reading: 'ふた' },
+            { text: 'つください。' },
+          ],
+          rubyHtml:
+            'シュークリームを<ruby>二<rt>ふた</rt></ruby>つください。',
+        },
+        {
+          jp: 'ケーキを一つください。',
+          kana: 'ケーキをひとつください。',
+          romaji: 'Kēki o hitotsu kudasai.',
+          id: 'Minta satu kue.',
+          rubySegments: [
+            { text: 'ケーキを' },
+            { text: '一', reading: 'ひと' },
+            { text: 'つください。' },
+          ],
+          rubyHtml: 'ケーキを<ruby>一<rt>ひと</rt></ruby>つください。',
+        },
+        {
+          jp: 'これをください。',
+          kana: 'これをください。',
+          romaji: 'Kore o kudasai.',
+          id: 'Minta yang ini.',
+          rubySegments: [{ text: 'これをください。' }],
+          rubyHtml: 'これをください。',
+        },
+      ],
+      role: 'active_target',
+      sourceRef: 'NHK L07 Tata Bahasa p. 11',
+      qaStatus: 'machine_checked',
+    },
+  ],
+  vocabulary: [
+    {
+      id: 'L07-V1',
+      kana: 'ケーキ',
+      romaji: 'kēki',
+      idMeaning: 'Kue',
+      contextSentence: {
+        jp: 'ケーキがいっぱいありますね。',
+        kana: 'ケーキがいっぱいありますね。',
+        romaji: 'Kēki ga ippai arimasu ne.',
+        id: 'Ada banyak kue ya.',
+        rubyHtml: 'ケーキがいっぱいありますね。',
+      },
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-V2',
+      kana: 'シュークリーム',
+      romaji: 'shūkurīmu',
+      idMeaning: 'Kue sus (kue berisi krim)',
+      contextSentence: {
+        jp: 'シュークリームはありますか。',
+        kana: 'シュークリームはありますか。',
+        romaji: 'Shūkurīmu wa arimasu ka.',
+        id: 'Apakah ada kue sus?',
+        rubyHtml: 'シュークリームはありますか。',
+      },
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-V3',
+      kana: 'あります',
+      romaji: 'arimasu',
+      idMeaning: 'Ada (untuk benda)',
+      contextSentence: {
+        jp: 'ケーキがいっぱいありますね。',
+        kana: 'ケーキがいっぱいありますね。',
+        romaji: 'Kēki ga ippai arimasu ne.',
+        id: 'Ada banyak kue ya.',
+        rubyHtml: 'ケーキがいっぱいありますね。',
+      },
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-V4',
+      kana: 'ください',
+      romaji: 'kudasai',
+      idMeaning: 'Mohon / minta (untuk meminta sesuatu)',
+      contextSentence: {
+        jp: 'シュークリームを二つください。',
+        kana: 'シュークリームをふたつください。',
+        romaji: 'Shūkurīmu o futatsu kudasai.',
+        id: 'Minta dua kue sus.',
+        rubyHtml:
+          'シュークリームを<ruby>二<rt>ふた</rt></ruby>つください。',
+      },
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-V5',
+      kanji: '二つ',
+      kana: 'ふたつ',
+      romaji: 'futatsu',
+      idMeaning: 'Dua buah (pembilang つ)',
+      contextSentence: {
+        jp: 'シュークリームを二つください。',
+        kana: 'シュークリームをふたつください。',
+        romaji: 'Shūkurīmu o futatsu kudasai.',
+        id: 'Minta dua kue sus.',
+        rubySegments: [
+          { text: 'シュークリームを' },
+          { text: '二', reading: 'ふた' },
+          { text: 'つください。' },
+        ],
+        rubyHtml:
+          'シュークリームを<ruby>二<rt>ふた</rt></ruby>つください。',
+      },
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-V6',
+      kana: 'いっぱい',
+      romaji: 'ippai',
+      idMeaning: 'Banyak (dalam dialog: banyak sekali)',
+      contextSentence: {
+        jp: 'ケーキがいっぱいありますね。',
+        kana: 'ケーキがいっぱいありますね。',
+        romaji: 'Kēki ga ippai arimasu ne.',
+        id: 'Ada banyak kue ya.',
+        rubyHtml: 'ケーキがいっぱいありますね。',
+      },
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-V7',
+      kana: 'すみません',
+      romaji: 'sumimasen',
+      idMeaning: 'Permisi / maaf',
+      contextSentence: {
+        jp: 'すみません、シュークリームはありますか。',
+        kana: 'すみません、シュークリームはありますか。',
+        romaji: 'Sumimasen, shūkurīmu wa arimasu ka.',
+        id: 'Permisi, apakah ada kue sus?',
+        rubyHtml: 'すみません、シュークリームはありますか。',
+      },
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-V8',
+      kana: 'こちら',
+      romaji: 'kochira',
+      idMeaning: 'Sebelah sini (sopan)',
+      contextSentence: {
+        jp: 'はい、こちらです。',
+        kana: 'はい、こちらです。',
+        romaji: 'Hai, kochira desu.',
+        id: 'Ya, sebelah sini.',
+        rubyHtml: 'はい、こちらです。',
+      },
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+  ],
+  listening: {
+    gistQuestions: [
+      {
+        id: 'L07-GQ1',
+        question: 'Di mana percakapan ini berlangsung?',
+        options: ['Di toko kue', 'Di ruang kelas', 'Di asrama'],
+        correctIndex: 0,
+        explanation:
+          'Anna berkata ケーキがいっぱいありますね, dan Sakura memesan kue kepada pegawai.',
+        sourceRef: 'NHK L07 Dialog',
+        qaStatus: 'machine_checked',
+      },
+      {
+        id: 'L07-GQ2',
+        question: 'Apa yang Sakura pesan?',
+        options: ['Dua kue sus', 'Satu kue cokelat', 'Tiga kue sus'],
+        correctIndex: 0,
+        explanation:
+          'Sakura berkata シュークリームを二つください — minta dua kue sus.',
+        sourceRef: 'NHK L07 Dialog',
+        qaStatus: 'machine_checked',
+      },
+    ],
+    detailQuestions: [
+      {
+        id: 'L07-DQ1',
+        question: 'Apa reaksi Anna saat melihat banyak kue?',
+        options: [
+          'ケーキがいっぱいありますね',
+          'ケーキはどこですか',
+          'ケーキをください',
+        ],
+        correctIndex: 0,
+        explanation:
+          'Anna mengatakan ケーキがいっぱいありますね — ada banyak kue ya.',
+        sourceRef: 'NHK L07 Dialog',
+        qaStatus: 'machine_checked',
+      },
+      {
+        id: 'L07-DQ2',
+        question: 'Bagaimana pegawai toko menunjukkan kue sus?',
+        options: ['はい、こちらです', 'いいえ、ありません', 'どうぞ、おやすみなさい'],
+        correctIndex: 0,
+        explanation:
+          'Pegawai berkata はい、こちらです — ya, sebelah sini.',
+        sourceRef: 'NHK L07 Dialog',
+        qaStatus: 'machine_checked',
+      },
+    ],
+  },
+  noticeShortQuotes: [
+    {
+      targetSentence: {
+        jp: 'シュークリームを二つください。',
+        kana: 'シュークリームをふたつください。',
+        romaji: 'Shūkurīmu o futatsu kudasai.',
+        id: 'Minta dua kue sus.',
+        rubyHtml:
+          'シュークリームを<ruby>二<rt>ふた</rt></ruby>つください。',
+      },
+      attribution:
+        'Kutipan pendek Pelajaran 7 (NHK WORLD Radio Japan © ver. April 2015)',
+    },
+  ],
+  exercises: [
+    {
+      id: 'L07-EX1',
+      type: 'cloze_particle',
+      prompt: 'Lengkapi pesanan berikut: シュークリーム [ ... ] 二つください。',
+      options: ['を (o)', 'は (wa)', 'が (ga)'],
+      correctAnswer: 'を (o)',
+      explanation:
+        'Partikel を menandai シュークリーム sebagai benda yang diminta.',
+      sourceRef: 'NHK L07 grammar point 2',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-EX2',
+      type: 'sentence_order',
+      prompt: 'Susun kata-kata berikut menjadi pesanan yang tepat.',
+      correctAnswer: [
+        'シュークリーム を ふたつ ください',
+        'シュークリームをふたつください',
+      ],
+      explanation:
+        'Urutannya: benda + を + jumlah + ください.',
+      sourceRef: 'NHK L07 grammar point 2',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-EX3',
+      type: 'audio_meaning',
+      prompt: 'Kamu ingin membeli dua kue. Ungkapan mana yang tepat?',
+      options: [
+        'ケーキを二つください',
+        'ケーキが二つあります',
+        'ケーキはどこですか',
+      ],
+      correctAnswer: 'ケーキを二つください',
+      explanation:
+        'Untuk memesan, pakai pola [benda] o [jumlah] kudasai. あります hanya menyatakan keberadaan.',
+      sourceRef: 'NHK L07 grammar point 2',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-EX4',
+      type: 'meaning_to_jp',
+      prompt: 'Tuliskan dalam bahasa Jepang: "Apakah ada kue?"',
+      correctAnswer: ['ケーキはありますか', 'けーきはありますか'],
+      explanation:
+        'Pola [benda] は あります か dipakai untuk menanyakan ketersediaan benda.',
+      sourceRef: 'NHK L07 grammar point 1',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-EX5',
+      type: 'grammar_transform',
+      prompt: 'Tulis bentuk Jepang untuk "dua buah" memakai pembilang つ.',
+      correctAnswer: ['二つ', 'ふたつ'],
+      explanation:
+        'Pembilang つ untuk dua adalah ふたつ, ditulis 二つ.',
+      sourceRef: 'NHK L07 Tata Bahasa p. 11',
+      qaStatus: 'machine_checked',
+    },
+  ],
+  outputTask: {
+    type: 'speaking',
+    scenarioPrompt:
+      'Kamu berada di toko kue. Pesan dua kue sus dan satu kue lain untuk dibawa pulang.',
+    instructions: [
+      'Buka dengan すみません untuk menarik perhatian pegawai.',
+      'Tanyakan ketersediaan dengan シュークリームはありますか.',
+      'Pesan dua kue sus dengan pola シュークリームを二つください.',
+      'Pesan satu kue lain dengan pola ケーキを一つください.',
+    ],
+    modelAnswer: {
+      jp: 'すみません。シュークリームはありますか。シュークリームを二つください。ケーキを一つください。',
+      kana: 'すみません。シュークリームはありますか。シュークリームをふたつください。ケーキをひとつください。',
+      romaji:
+        'Sumimasen. Shūkurīmu wa arimasu ka. Shūkurīmu o futatsu kudasai. Kēki o hitotsu kudasai.',
+      id: 'Permisi. Apakah ada kue sus? Minta dua kue sus. Minta satu kue.',
+      rubySegments: [
+        { text: 'すみません。シュークリームはありますか。シュークリームを' },
+        { text: '二', reading: 'ふた' },
+        { text: 'つください。ケーキを' },
+        { text: '一', reading: 'ひと' },
+        { text: 'つください。' },
+      ],
+      rubyHtml:
+        'すみません。シュークリームはありますか。シュークリームを<ruby>二<rt>ふた</rt></ruby>つください。ケーキを<ruby>一<rt>ひと</rt></ruby>つください。',
+    },
+    selfCheckList: [
+      'Membuka dengan すみません.',
+      'Menanyakan ketersediaan dengan はありますか.',
+      'Memakai を setelah nama benda yang dipesan.',
+      'Menyebut jumlah dengan pembilang つ sebelum ください.',
+    ],
+    sourceRef: 'NHK L07 dialogue synthesis',
+    qaStatus: 'machine_checked',
+  },
+  reviewCards: [
+    {
+      id: 'L07-RC1',
+      lessonId: 'L07',
+      front: 'ケーキ',
+      back: 'Kue',
+      type: 'vocab',
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-RC2',
+      lessonId: 'L07',
+      front: 'シュークリーム',
+      back: 'Kue sus (kue berisi krim)',
+      type: 'vocab',
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-RC3',
+      lessonId: 'L07',
+      front: 'あります',
+      back: 'Ada (untuk benda)',
+      type: 'vocab',
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-RC4',
+      lessonId: 'L07',
+      front: 'ください',
+      back: 'Mohon / minta',
+      type: 'vocab',
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-RC5',
+      lessonId: 'L07',
+      front: '二つ (ふたつ)',
+      back: 'Dua buah (pembilang つ)',
+      type: 'vocab',
+      sourceRef: 'NHK L07 Dialog',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-RC6',
+      lessonId: 'L07',
+      front: 'Pola untuk menanyakan ketersediaan benda',
+      back: '[benda] は あります か',
+      type: 'grammar',
+      sourceRef: 'NHK L07 grammar point 1',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-RC7',
+      lessonId: 'L07',
+      front: 'Pola untuk memesan sejumlah benda',
+      back: '[benda] を [jumlah] ください',
+      type: 'grammar',
+      sourceRef: 'NHK L07 grammar point 2',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-RC8',
+      lessonId: 'L07',
+      front: 'Dengarkan dialog resmi NHK L7. Apa yang Sakura pesan?',
+      back: 'シュークリームを二つ — dua kue sus.',
+      type: 'listening',
+      audioRef:
+        'https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/07-id-le_01.mp3',
+      sourceRef: 'NHK L07 audio',
+      qaStatus: 'machine_checked',
+    },
+    {
+      id: 'L07-RC9',
+      lessonId: 'L07',
+      front: 'Praktikkan memesan dua kue sus dan satu kue di toko.',
+      back: 'すみません。シュークリームを二つください。ケーキを一つください。',
+      type: 'output',
+      sourceRef: 'NHK L07 output task',
+      qaStatus: 'machine_checked',
+    },
+  ],
+  qa: {
+    status: 'machine_checked',
+    reviewedBy: 'TBD',
+    verifiedDate: '2026-10-28',
+  },
+};
