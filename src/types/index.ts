@@ -165,6 +165,7 @@ export interface CourseMapEntry {
   printedPage: number;
   pdfPage: number;
   audioUrl: string;
+  /** PDF dua halaman milik pelajaran ini di NHK; `pdfPage` merujuk halaman eBook gabungan. */
   pdfUrl: string;
   webUrl: string;
   situationCategories: string[];

@@ -11,7 +11,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 5,
     "pdfPage": 6,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/01-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p06.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le1_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/1.html",
     "situationCategories": [
       "Di universitas",
@@ -32,7 +32,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 6,
     "pdfPage": 7,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/02-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p07.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le2_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/2.html",
     "situationCategories": [
       "Di universitas",
@@ -53,7 +53,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 7,
     "pdfPage": 8,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/03-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p08.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le3_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/3.html",
     "situationCategories": [
       "Di universitas",
@@ -74,7 +74,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 8,
     "pdfPage": 9,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/04-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p09.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le4_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/4.html",
     "situationCategories": [
       "Di asrama",
@@ -95,7 +95,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 9,
     "pdfPage": 10,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/05-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p10.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le5_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/5.html",
     "situationCategories": [
       "Di asrama"
@@ -115,7 +115,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 10,
     "pdfPage": 11,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/06-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p11.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le6_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/6.html",
     "situationCategories": [
       "Di asrama",
@@ -136,7 +136,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 11,
     "pdfPage": 12,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/07-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p12.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le7_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/7.html",
     "situationCategories": [
       "Perbelanjaan & Restoran",
@@ -157,7 +157,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 12,
     "pdfPage": 13,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/08-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p13.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le8_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/8.html",
     "situationCategories": [
       "Di universitas",
@@ -178,7 +178,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 13,
     "pdfPage": 14,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/09-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p14.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le9_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/9.html",
     "situationCategories": [
       "Di universitas",
@@ -199,7 +199,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 14,
     "pdfPage": 15,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/10-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p15.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le10_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/10.html",
     "situationCategories": [
       "Di universitas",
@@ -220,7 +220,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 15,
     "pdfPage": 16,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/11-id-le_02.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p16.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le11_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/11.html",
     "situationCategories": [
       "Di universitas",
@@ -241,7 +241,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 16,
     "pdfPage": 17,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/12-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p17.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le12_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/12.html",
     "situationCategories": [
       "Di asrama",
@@ -262,7 +262,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 17,
     "pdfPage": 18,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/13-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p18.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le13_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/13.html",
     "situationCategories": [
       "Di asrama",
@@ -283,7 +283,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 18,
     "pdfPage": 19,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/14-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p19.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le14_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/14.html",
     "situationCategories": [
       "Di asrama",
@@ -304,7 +304,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 19,
     "pdfPage": 20,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/15-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p20.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le15_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/15.html",
     "situationCategories": [
       "Bepergian & Berjalan-jalan"
@@ -324,7 +324,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 20,
     "pdfPage": 21,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/16-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p21.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le16_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/16.html",
     "situationCategories": [
       "Perbelanjaan & Restoran",
@@ -345,7 +345,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 21,
     "pdfPage": 22,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/17-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p22.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le17_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/17.html",
     "situationCategories": [
       "Perbelanjaan & Restoran"
@@ -365,7 +365,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 22,
     "pdfPage": 23,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/18-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p23.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le18_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/18.html",
     "situationCategories": [
       "Bepergian & Berjalan-jalan",
@@ -386,7 +386,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 23,
     "pdfPage": 24,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/19-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p24.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le19_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/19.html",
     "situationCategories": [
       "Bepergian & Berjalan-jalan"
@@ -406,7 +406,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 24,
     "pdfPage": 25,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/20-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p25.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le20_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/20.html",
     "situationCategories": [
       "Kebudayaan Jepang",
@@ -427,7 +427,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 25,
     "pdfPage": 26,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/21-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p26.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le21_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/21.html",
     "situationCategories": [
       "Kebudayaan Jepang",
@@ -448,7 +448,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 26,
     "pdfPage": 27,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/22-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p27.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le22_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/22.html",
     "situationCategories": [
       "Di asrama",
@@ -469,7 +469,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 27,
     "pdfPage": 28,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/23-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p28.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le23_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/23.html",
     "situationCategories": [
       "Di universitas"
@@ -489,7 +489,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 28,
     "pdfPage": 29,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/24-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p29.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le24_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/24.html",
     "situationCategories": [
       "Di universitas",
@@ -510,7 +510,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 29,
     "pdfPage": 30,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/25-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p30.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le25_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/25.html",
     "situationCategories": [
       "Di universitas",
@@ -531,7 +531,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 30,
     "pdfPage": 31,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/26-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p31.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le26_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/26.html",
     "situationCategories": [
       "Di universitas"
@@ -551,7 +551,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 31,
     "pdfPage": 32,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/27-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p32.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le27_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/27.html",
     "situationCategories": [
       "Acara Khusus"
@@ -571,7 +571,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 32,
     "pdfPage": 33,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/28-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p33.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le28_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/28.html",
     "situationCategories": [
       "Bepergian & Berjalan-jalan"
@@ -591,7 +591,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 33,
     "pdfPage": 34,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/29-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p34.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le29_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/29.html",
     "situationCategories": [
       "Kebudayaan Jepang",
@@ -612,7 +612,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 34,
     "pdfPage": 35,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/30-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p35.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le30_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/30.html",
     "situationCategories": [
       "Bepergian & Berjalan-jalan"
@@ -632,7 +632,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 35,
     "pdfPage": 36,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/31-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p36.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le31_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/31.html",
     "situationCategories": [
       "Kebudayaan Jepang",
@@ -653,7 +653,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 36,
     "pdfPage": 37,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/32-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p37.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le32_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/32.html",
     "situationCategories": [
       "Kebudayaan Jepang",
@@ -674,7 +674,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 37,
     "pdfPage": 38,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/33-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p38.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le33_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/33.html",
     "situationCategories": [
       "Bepergian & Berjalan-jalan"
@@ -694,7 +694,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 38,
     "pdfPage": 39,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/34-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p39.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le34_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/34.html",
     "situationCategories": [
       "Perbelanjaan & Restoran",
@@ -715,7 +715,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 39,
     "pdfPage": 40,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/35-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p40.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le35_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/35.html",
     "situationCategories": [
       "Perbelanjaan & Restoran"
@@ -735,7 +735,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 40,
     "pdfPage": 41,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/36-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p41.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le36_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/36.html",
     "situationCategories": [
       "Bepergian & Berjalan-jalan"
@@ -755,7 +755,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 41,
     "pdfPage": 42,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/37-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p42.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le37_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/37.html",
     "situationCategories": [
       "Di asrama"
@@ -775,7 +775,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 42,
     "pdfPage": 43,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/38-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p43.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le38_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/38.html",
     "situationCategories": [
       "Bepergian & Berjalan-jalan",
@@ -796,7 +796,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 43,
     "pdfPage": 44,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/39-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p44.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le39_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/39.html",
     "situationCategories": [
       "Penyelesaian masalah"
@@ -816,7 +816,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 44,
     "pdfPage": 45,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/40-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p45.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le40_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/40.html",
     "situationCategories": [
       "Di asrama",
@@ -837,7 +837,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 45,
     "pdfPage": 46,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/41-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p46.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le41_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/41.html",
     "situationCategories": [
       "Di asrama",
@@ -858,7 +858,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 46,
     "pdfPage": 47,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/42-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p47.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le42_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/42.html",
     "situationCategories": [
       "Perbelanjaan & Restoran",
@@ -879,7 +879,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 47,
     "pdfPage": 48,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/43-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p48.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le43_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/43.html",
     "situationCategories": [
       "Kebudayaan Jepang",
@@ -900,7 +900,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 48,
     "pdfPage": 49,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/44-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p49.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le44_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/44.html",
     "situationCategories": [
       "Perbelanjaan & Restoran",
@@ -921,7 +921,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 49,
     "pdfPage": 50,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/45-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p50.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le45_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/45.html",
     "situationCategories": [
       "Perbelanjaan & Restoran",
@@ -942,7 +942,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 50,
     "pdfPage": 51,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/46-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p51.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le46_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/46.html",
     "situationCategories": [
       "Bepergian & Berjalan-jalan",
@@ -963,7 +963,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 51,
     "pdfPage": 52,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/47-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p52.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le47_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/47.html",
     "situationCategories": [
       "Di universitas"
@@ -983,7 +983,7 @@ export const COURSE_MAP: CourseMapEntry[] = [
     "printedPage": 52,
     "pdfPage": 53,
     "audioUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/48-id-le_01.mp3",
-    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/pdf/p53.pdf",
+    "pdfUrl": "https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le48_id_t.pdf",
     "webUrl": "https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/48.html",
     "situationCategories": [
       "Bepergian & Berjalan-jalan",

@@ -43,6 +43,15 @@ assert(
   'Lesson 11 correctly mapped to 11-id-le_02.mp3'
 );
 
+const pdfMatches =
+  courseMapFile.match(
+    /"pdfUrl":\s*"https:\/\/www3\.nhk\.or\.jp\/nhkworld\/lesson\/update\/pdf\/le\d{1,2}_id_t\.pdf"/g
+  ) || [];
+assert(
+  pdfMatches.length === 48,
+  `All 48 lesson PDF URLs use the verified NHK per-lesson path (found ${pdfMatches.length})`
+);
+
 // --- Authored lessons ---
 const indexFile = readFileSync(resolve(rootDir, 'src/data/lessons/index.ts'), 'utf8');
 const AUTHORED_COUNT = 20;

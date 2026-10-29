@@ -55,7 +55,7 @@ Dijalankan 2026-10-29 dari folder proyek:
 |---|---|---|
 | Type check | `npm run lint` | lulus, 0 error |
 | Unit test | `npm test` | 221/221 lulus (4 berkas) |
-| Validator konten | `npm run validate-content` | 245/245 pemeriksaan lulus |
+| Validator konten | `npm run validate-content` | 246/246 pemeriksaan lulus |
 | Build produksi | `npm run build` | lulus (JS 622,47 kB / gzip 143,92 kB; CSS 20,26 kB / gzip 4,83 kB) |
 
 Vite memberi peringatan bahwa bundel JS melewati 500 kB. Build tetap berhasil;
@@ -131,3 +131,8 @@ di langkah dengar.
   L05 memakai 漫画 di `rubyHtml` tetapi マンガ di `jp`, dan L10 memakai
   測ります di `rubyHtml` tetapi はかります di `jp`. Keduanya diselaraskan
   dengan teks `jp`.
+- Saat memverifikasi tautan L16–L20, semua `pdfUrl` lama
+  (`/learn/pdf/pNN.pdf`) ternyata 404. Tautan diganti dengan PDF dua halaman
+  resmi NHK, `/lesson/update/pdf/leN_id_t.pdf`, dan ke-48 URL dicek HTTP 200.
+  Validator kini menolak pola lama. Nomor `pdfPage` tetap merujuk halaman
+  eBook gabungan, bukan berkas dua halaman ini.

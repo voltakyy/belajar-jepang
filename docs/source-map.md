@@ -29,6 +29,7 @@ Dokumen ini memetakan seluruh 48 pelajaran dari materi sumber resmi NHK WORLD Ra
 ## 2. Kebijakan Tautan Audio & Naskah (Mode Link-Only Tab Baru)
 * **Basis URL Pelajaran:** `https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/list/{N}.html`
 * **Basis URL Audio MP3:** `https://www3.nhk.or.jp/nhkworld/lesson/indonesian/learn/mp3/{NN}-id-le_01.mp3`
+* **Basis URL PDF Pelajaran:** `https://www3.nhk.or.jp/nhkworld/lesson/update/pdf/le{N}_id_t.pdf` — L01–L09 memakai satu digit (`le1_id_t.pdf`), L10–L48 dua digit. Ini PDF dua halaman milik tiap pelajaran; nomor `PDF p.` di tabel di bawah merujuk eBook gabungan, bukan berkas ini. Seluruh 48 URL dicek dan mengembalikan HTTP 200 pada 29 Oktober 2026.
 * **Anomali Terverifikasi:** Pada **Pelajaran 11**, URL audio resmi menggunakan penomoran revisi: `.../mp3/11-id-le_02.mp3` (bukan `_01.mp3`). Seluruh 48 URL diverifikasi dan di-scrape langsung pada 28 Oktober 2026.
 * **Mekanisme Putar Audio (Mode A - Link-Only Tab Baru):**
   * Tombol audio membuka URL MP3 resmi atau halaman pelajaran resmi di tab baru peramban. Tidak ada file MP3 atau PDF yang di-host ulang atau di-commit ke repositori.
