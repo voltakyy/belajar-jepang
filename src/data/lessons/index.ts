@@ -20,6 +20,11 @@ import { lesson17 } from './lesson17';
 import { lesson18 } from './lesson18';
 import { lesson19 } from './lesson19';
 import { lesson20 } from './lesson20';
+import { lesson21 } from './lesson21';
+import { lesson22 } from './lesson22';
+import { lesson23 } from './lesson23';
+import { lesson24 } from './lesson24';
+import { lesson25 } from './lesson25';
 
 export const ALL_LESSONS: Lesson[] = [
   lesson01,
@@ -42,7 +47,12 @@ export const ALL_LESSONS: Lesson[] = [
   lesson18,
   lesson19,
   lesson20,
-  // Lessons 21 to 48 will follow in the next content batch
+  lesson21,
+  lesson22,
+  lesson23,
+  lesson24,
+  lesson25,
+  // Lessons 26 to 48 will follow in the next content batch
 ];
 
 export const PRODUCT_ARCS: ProductArc[] = [

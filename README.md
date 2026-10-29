@@ -13,16 +13,17 @@ otomatis oleh GitHub Actions setiap ada push ke `main`.
 
 ## Status
 
-Dua puluh pelajaran dari 48 sudah dibangun dan diperiksa mesin (L01–L20).
+Dua puluh lima pelajaran dari 48 sudah dibangun dan diperiksa mesin (L01–L25).
 Sisanya masih berupa peta kurikulum dengan tautan ke sumber resmi.
 
-- L01–L20 lolos type check, 221 unit test, validator konten, dan build
+- L01–L25 lolos type check, 271 unit test, validator konten, dan build
   produksi. Laporan: [`docs/qa-lesson-01.md`](docs/qa-lesson-01.md),
   [`docs/qa-lessons-02-05.md`](docs/qa-lessons-02-05.md),
   [`docs/qa-lessons-06-10.md`](docs/qa-lessons-06-10.md),
-  [`docs/qa-lessons-11-15.md`](docs/qa-lessons-11-15.md), dan
-  [`docs/qa-lessons-16-20.md`](docs/qa-lessons-16-20.md).
-- L02–L20 belum memakai penanda menit audio karena offset dialognya belum
+  [`docs/qa-lessons-11-15.md`](docs/qa-lessons-11-15.md),
+  [`docs/qa-lessons-16-20.md`](docs/qa-lessons-16-20.md), dan
+  [`docs/qa-lessons-21-25.md`](docs/qa-lessons-21-25.md).
+- L02–L25 belum memakai penanda menit audio karena offset dialognya belum
   diukur; UI tidak menampilkan tautan waktu palsu.
 - Belum ada peninjauan oleh penutur asli atau pengajar. Status QA masih
   `machine_checked`.
@@ -69,7 +70,7 @@ Contoh bunyi yang benar tetap audio NHK.
 ```
 src/
   components/       tampilan: beranda, pelajaran, peta, kana, ulasan, setelan
-  data/lessons/     isi pelajaran (L01–L20 tertulis, 48 di peta)
+  data/lessons/     isi pelajaran (L01–L25 tertulis, 48 di peta)
   data/kana.ts      tabel hiragana dan katakana
   utils/            SRS, normalisasi jawaban, speech
   tests/            unit test
@@ -82,6 +83,7 @@ docs/
   qa-lessons-06-10.md laporan pemeriksaan L06–L10
   qa-lessons-11-15.md laporan pemeriksaan L11–L15
   qa-lessons-16-20.md laporan pemeriksaan L16–L20
+  qa-lessons-21-25.md laporan pemeriksaan L21–L25
   rights.md         kebijakan hak cipta dan lisensi
 scripts/            validator konten dan skrip riset sumber
 LICENSE             lisensi kode (MIT)
